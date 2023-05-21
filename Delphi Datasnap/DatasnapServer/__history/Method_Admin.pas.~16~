@@ -1,0 +1,103 @@
+unit Method_Admin;
+
+interface
+
+uses System.SysUtils, System.Classes, System.Json,
+    DataSnap.DSProviderDataModuleAdapter,
+    Datasnap.DSServer, Datasnap.DSAuth, Data.DB, Data.Win.ADODB,
+  Datasnap.Provider, Data.FMTBcd, Data.SqlExpr, Data.DBXMSSQL;
+
+type
+  TMethodAdmin = class(TDSServerModule)
+    Conn: TADOConnection;
+    dsAgr: TADODataSet;
+    ProviderAgr: TDataSetProvider;
+    SQLDataSet1: TSQLDataSet;
+    SQLConnection1: TSQLConnection;
+    dsAgrAgr_id: TIntegerField;
+    dsAgrBadge: TStringField;
+    dsAgrAgr_date: TIntegerField;
+    dsAgrCust_id: TIntegerField;
+    dsAgrDate_end: TIntegerField;
+    dsAgrDate_start: TIntegerField;
+    dsAgrIs_active: TBooleanField;
+    dsAgrJoin_id: TSmallintField;
+    dsAgrDisc_a: TBCDField;
+    dsAgrDisc_b: TBCDField;
+    dsAgrCredit_limit: TBCDField;
+    dsAgrCredits: TBCDField;
+    dsAgrExtraCost: TBCDField;
+    dsAgrJoin_Cost: TBCDField;
+    dsAgrInsuranceCredits: TBCDField;
+    dsAgrInsuranceDebits: TBCDField;
+    dsAgrNet_cost: TBCDField;
+    dsAgrTotal_cost: TBCDField;
+    dsAgrIsFreeze: TBooleanField;
+    dsAgrLastAutoUpdate: TIntegerField;
+    dsAgrFreeze_StartDate: TIntegerField;
+    dsAgrFreeze_EndDate: TIntegerField;
+    dsAgrIsactive_FinishDate: TIntegerField;
+    dsAgrRemark: TMemoField;
+    dsAgrKnowUS: TStringField;
+    dsAgrDeleted: TBooleanField;
+    dsAgrRate_type: TSmallintField;
+    dsAgrFreq: TSmallintField;
+    dsAgrTaxAmount: TFloatField;
+    dsAgrTaxPercent: TFloatField;
+    dsAgrtime_id: TIntegerField;
+    dsAgrTime_start: TIntegerField;
+    dsAgrTime_end: TIntegerField;
+    dsAgrIsAutoUnFreeze: TBooleanField;
+    dsAgrUser_Id: TIntegerField;
+    dsAgrLast_User_Id: TIntegerField;
+    dsAgrLast_MoDate: TIntegerField;
+    dsAgrLast_MoTime: TIntegerField;
+    dsAgrLast_ModType: TStringField;
+    dsAgrstatus_ID: TIntegerField;
+    dsAgrRow_id: TIntegerField;
+    dsAgrIs_Rej: TBooleanField;
+    dsAgrRej_Date: TIntegerField;
+    dsAgrRej_Id: TIntegerField;
+    dsAgrRej_debits: TBCDField;
+    dsAgrRej_Credits: TBCDField;
+    dsAgrRej_Total_Cost: TBCDField;
+    dsAgrClass_id: TIntegerField;
+    dsAgrIs_Amount: TBooleanField;
+    procedure DSServerModuleCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    function EchoString(Value: string): string;
+    function ReverseString(Value: string): string;
+  end;
+
+implementation
+
+{%CLASSGROUP 'FMX.Controls.TControl'}
+
+{$R *.dfm}
+
+
+uses System.StrUtils;
+
+procedure TMethodAdmin.DSServerModuleCreate(Sender: TObject);
+begin
+Conn.Connected  := True;
+dsAgr.Active := True;
+
+
+end;
+
+function TMethodAdmin.EchoString(Value: string): string;
+begin
+  Result := Value;
+end;
+
+function TMethodAdmin.ReverseString(Value: string): string;
+begin
+  Result := System.StrUtils.ReverseString(Value);
+end;
+
+end.
+

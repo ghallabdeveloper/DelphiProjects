@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/06 16:53:39.000.672,=C:\Datasnaps\DatasnapProje\DatasnapServer\Unit1.pas</Transaction>
+    <Transaction>2023/05/06 16:53:39.000.828,=C:\Datasnaps\DatasnapProje\DatasnapServer\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2023/05/06 16:53:43.000.088,=C:\Datasnaps\DatasnapProje\DatasnapServer\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2023/05/06 16:55:46.000.391,C:\Datasnaps\DatasnapProje\DatasnapServer\Method_Admin.dfm=C:\Datasnaps\DatasnapProje\DatasnapServer\ServerMethodsUnit1.dfm</Transaction>
+    <Transaction>2023/05/06 16:55:46.000.391,C:\Datasnaps\DatasnapProje\DatasnapServer\Method_Admin.pas=C:\Datasnaps\DatasnapProje\DatasnapServer\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2023/05/06 16:56:31.000.678,C:\Datasnaps\DatasnapProje\DatasnapServer\MainForm.fmx=C:\Datasnaps\DatasnapProje\DatasnapServer\Unit1.fmx</Transaction>
+    <Transaction>2023/05/06 16:56:31.000.678,C:\Datasnaps\DatasnapProje\DatasnapServer\MainForm.pas=C:\Datasnaps\DatasnapProje\DatasnapServer\Unit1.pas</Transaction>
+    <Transaction>2023/05/06 16:57:40.000.708,C:\Datasnaps\DatasnapProje\DatasnapServer\Main_Form.pas=C:\Datasnaps\DatasnapProje\DatasnapServer\MainForm.pas</Transaction>
+    <Transaction>2023/05/06 16:57:40.000.708,C:\Datasnaps\DatasnapProje\DatasnapServer\Main_Form.fmx=C:\Datasnaps\DatasnapProje\DatasnapServer\MainForm.fmx</Transaction>
+  </Transactions>
+</BorlandProject>

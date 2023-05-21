@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/06 18:05:51.000.042,C:\Datasnaps\DatasnapProje\Datasnapclientvcl\ABOUT.PAS=</Transaction>
+    <Transaction>2023/05/06 18:12:17.000.807,C:\Datasnaps\DatasnapProje\Datasnapclientvcl\SDIAPP.dproj=C:\Datasnaps\DatasnapProje\Datasnapclientvcl\DsClientVcl.dproj</Transaction>
+    <Transaction>2023/05/06 18:18:54.000.361,=C:\Datasnaps\DatasnapProje\Datasnapclientvcl\Unit1.pas</Transaction>
+    <Transaction>2023/05/06 18:19:08.000.666,C:\Datasnaps\DatasnapProje\Datasnapclientvcl\Unit1.pas=C:\Datasnaps\DatasnapProje\Datasnapclientvcl\ServerClass.pas</Transaction>
+  </Transactions>
+</BorlandProject>

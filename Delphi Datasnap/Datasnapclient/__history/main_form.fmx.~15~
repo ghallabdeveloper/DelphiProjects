@@ -1,0 +1,111 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 212
+  ClientWidth = 578
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 296.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Do Connect Server'
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    Position.X = 304.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Http Port'
+    TabOrder = 9
+  end
+  object EdithttpPort: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Text = '8080'
+    Position.X = 304.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label2: TLabel
+    Position.X = 448.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Tcp Port'
+    TabOrder = 4
+  end
+  object EditTcpPort: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Text = '2011'
+    Position.X = 448.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object rbHttp: TRadioButton
+    Position.X = 288.000000000000000000
+    Position.Y = 24.000000000000000000
+    TabOrder = 11
+  end
+  object rbTCP: TRadioButton
+    Position.X = 432.000000000000000000
+    Position.Y = 24.000000000000000000
+    TabOrder = 10
+  end
+  object txtHostName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Text = 'LocalHost'
+    Position.X = 304.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label3: TLabel
+    Position.X = 304.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'HostName'
+    TabOrder = 8
+  end
+  object Conn: TSQLConnection
+    DriverName = 'DataSnap'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverUnit=Data.DBXDataSnap'
+      'HostName=localhost'
+      'Port=8080'
+      'CommunicationProtocol=http'
+      'DatasnapContext=datasnap/'
+      
+        'DriverAssemblyLoader=Borland.Data.TDBXClientDriverLoader,Borland' +
+        '.Data.DbxClientDriver,Version=24.0.0.0,Culture=neutral,PublicKey' +
+        'Token=91d62ebb5b0d1b1b'
+      'Filters={}')
+    Left = 64
+    Top = 56
+  end
+  object TMethodAdmin: TDSProviderConnection
+    ServerClassName = 'MethodAdmin'
+    SQLConnection = Conn
+    Left = 168
+    Top = 96
+  end
+end

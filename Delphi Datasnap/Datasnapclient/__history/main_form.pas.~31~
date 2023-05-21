@@ -1,0 +1,83 @@
+unit main_form;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  Data.DBXDataSnap, Data.DBXCommon, IPPeerClient, Data.DB, Data.SqlExpr,
+  FMX.Edit, FMX.StdCtrls, FMX.Controls.Presentation, Data.DbxHTTPLayer,
+  Datasnap.DBClient, Datasnap.DSConnect;
+
+type
+  TMainForm = class(TForm)
+    Conn: TSQLConnection;
+    Button1: TButton;
+    Label1: TLabel;
+    EdithttpPort: TEdit;
+    Label2: TLabel;
+    EditTcpPort: TEdit;
+    rbHttp: TRadioButton;
+    rbTCP: TRadioButton;
+    txtHostName: TEdit;
+    Label3: TLabel;
+    TMethodAdmin: TDSProviderConnection;
+    procedure Button1Click(Sender: TObject);
+  private
+
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  MainForm: TMainForm;
+
+implementation
+
+{$R *.fmx}
+
+
+procedure TMainForm.Button1Click(Sender: TObject);
+var
+  Port_TCP, Port_HTTP:string;
+//  pParams: TStrings;
+  begin
+  //  pParams:= TStrings.Create;
+  Conn.Params.Clear;
+    Conn.Params.Add('HostName='+txtHostName.Text);
+
+
+     Port_HTTP := EdithttpPort.text;
+   Port_TCP := EditTcpPort.text;
+  if rbHttp.IsChecked then
+  begin
+      Conn.Params.Add('CommunicationProtocol=http');
+          Conn.Params.Add('Port=' + (Port_HTTP));
+  end
+  else  if rbTCP.IsChecked then
+  Begin
+   Conn.Params.Add('CommunicationProtocol=tcp/ip');
+          Conn.Params.Add('Port=' + (Port_TCP));
+  End;
+    // pParams.Add('URLPath=' + pPath);
+
+
+    Try
+    Conn.Open;
+    IF Conn.Connected Then
+    Begin
+         ShowMessage('Connected');
+    End;
+  Except
+    On E: Exception Do
+      ShowMessage( E.Message);
+  End;
+
+  end;
+
+
+
+
+
+end.

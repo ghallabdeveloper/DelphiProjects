@@ -1,0 +1,102 @@
+object MethodAdmin: TMethodAdmin
+  OldCreateOrder = False
+  OnCreate = DSServerModuleCreate
+  Height = 337
+  Width = 536
+  object Conn: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=SQLNCLI11.1;Integrated Security="";Persist Security Inf' +
+      'o=False;User ID=sa;Initial Catalog=ClubDB;Data Source=WINCTRL-VS' +
+      '9CSJK\SQLEXPRESS2014;Initial File Name="";Server SPN="";'
+    LoginPrompt = False
+    Provider = 'SQLNCLI11.1'
+    Left = 168
+    Top = 56
+  end
+  object dsAgr: TADODataSet
+    Connection = Conn
+    CursorType = ctStatic
+    CommandText = 'select * from Lists'
+    Parameters = <>
+    Left = 168
+    Top = 144
+    object dsAgrList_id: TSmallintField
+      FieldName = 'List_id'
+    end
+    object dsAgrItem_id: TSmallintField
+      FieldName = 'Item_id'
+    end
+    object dsAgrName_a: TStringField
+      FieldName = 'Name_a'
+      Size = 50
+    end
+    object dsAgrName_e: TStringField
+      FieldName = 'Name_e'
+      Size = 50
+    end
+    object dsAgrCan_Del: TBooleanField
+      FieldName = 'Can_Del'
+    end
+    object dsAgrCan_Edit: TBooleanField
+      FieldName = 'Can_Edit'
+    end
+  end
+  object ProviderAgr: TDataSetProvider
+    DataSet = dsAgr
+    Left = 312
+    Top = 64
+  end
+  object SQLDataSet1: TSQLDataSet
+    CommandText = 'select * from Agr'
+    MaxBlobSize = 1
+    Params = <>
+    SQLConnection = SQLConnection1
+    Left = 224
+    Top = 224
+  end
+  object SQLConnection1: TSQLConnection
+    ConnectionName = 'MSSQLConnection'
+    DriverName = 'MSSQL'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverUnit=Data.DBXMSSQL'
+      
+        'DriverPackageLoader=TDBXDynalinkDriverLoader,DBXCommonDriver260.' +
+        'bpl'
+      
+        'DriverAssemblyLoader=Borland.Data.TDBXDynalinkDriverLoader,Borla' +
+        'nd.Data.DbxCommonDriver,Version=24.0.0.0,Culture=neutral,PublicK' +
+        'eyToken=91d62ebb5b0d1b1b'
+      
+        'MetaDataPackageLoader=TDBXMsSqlMetaDataCommandFactory,DbxMSSQLDr' +
+        'iver260.bpl'
+      
+        'MetaDataAssemblyLoader=Borland.Data.TDBXMsSqlMetaDataCommandFact' +
+        'ory,Borland.Data.DbxMSSQLDriver,Version=24.0.0.0,Culture=neutral' +
+        ',PublicKeyToken=91d62ebb5b0d1b1b'
+      'GetDriverFunc=getSQLDriverMSSQL'
+      'LibraryName=dbxmss.dll'
+      'VendorLib=sqlncli10.dll'
+      'VendorLibWin64=sqlncli10.dll'
+      'MaxBlobSize=-1'
+      'OSAuthentication=False'
+      'PrepareSQL=True'
+      'SchemaOverride=sa.dbo'
+      'DriverName=MSSQL'
+      'HostName=WINCTRL-VS9CSJK\SQLEXPRESS2014'
+      'Database=ClubDB'
+      'User_Name=sa'
+      'Password=123'
+      'BlobSize=-1'
+      'ErrorResourceFile='
+      'LocaleCode=0000'
+      'IsolationLevel=ReadCommitted'
+      'OS Authentication=False'
+      'Prepare SQL=False'
+      'ConnectTimeout=60'
+      'Mars_Connection=False')
+    Left = 144
+    Top = 216
+  end
+end

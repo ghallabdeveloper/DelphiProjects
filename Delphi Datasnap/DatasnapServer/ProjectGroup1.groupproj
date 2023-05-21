@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FF498FF3-4593-47A5-8C97-BD159551EA7C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DatasnapServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Datasnapclient\DsClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Datasnapclientvcl\DsClientVcl.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DatasnapServer">
+        <MSBuild Projects="DatasnapServer.dproj"/>
+    </Target>
+    <Target Name="DatasnapServer:Clean">
+        <MSBuild Projects="DatasnapServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DatasnapServer:Make">
+        <MSBuild Projects="DatasnapServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DsClient">
+        <MSBuild Projects="..\Datasnapclient\DsClient.dproj"/>
+    </Target>
+    <Target Name="DsClient:Clean">
+        <MSBuild Projects="..\Datasnapclient\DsClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DsClient:Make">
+        <MSBuild Projects="..\Datasnapclient\DsClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DsClientVcl">
+        <MSBuild Projects="..\Datasnapclientvcl\DsClientVcl.dproj"/>
+    </Target>
+    <Target Name="DsClientVcl:Clean">
+        <MSBuild Projects="..\Datasnapclientvcl\DsClientVcl.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DsClientVcl:Make">
+        <MSBuild Projects="..\Datasnapclientvcl\DsClientVcl.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DatasnapServer;DsClient;DsClientVcl"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DatasnapServer:Clean;DsClient:Clean;DsClientVcl:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DatasnapServer:Make;DsClient:Make;DsClientVcl:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

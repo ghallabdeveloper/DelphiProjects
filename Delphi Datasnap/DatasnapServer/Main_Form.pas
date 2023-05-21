@@ -1,0 +1,63 @@
+unit Main_Form;
+
+interface
+
+uses Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs,
+  FMX.StdCtrls, FMX.Edit, FMX.Types, FMX.Controls.Presentation;
+
+type
+  TMainForm = class(TForm)
+    ButtonStart: TButton;
+    EditTcpPort: TEdit;
+    Label2: TLabel;
+    EdithttpPort: TEdit;
+    Label1: TLabel;
+    ButtonStop: TButton;
+    procedure ButtonStartClick(Sender: TObject);
+    procedure ButtonStopClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  MainForm: TMainForm;
+
+implementation
+
+uses
+  ServerContainerUnit1;
+
+{$R *.fmx}
+
+procedure TMainForm.ButtonStartClick(Sender: TObject);
+var
+  Port_TCP, Port_HTTP:string;
+  begin
+
+     Port_HTTP := EdithttpPort.text;
+   Port_TCP := EditTcpPort.text;
+ ServerContainer1.TCP.Port :=  StrToInt( Port_TCP);
+    ServerContainer1.HTTP.HttpPort := StrToInt(Port_HTTP);
+    ServerContainer1.HTTP.DSPort :=StrToInt( Port_TCP);
+    //Try
+      ServerContainer1.Server.Start;
+      if  ServerContainer1.Server.Started  then
+      Begin
+        ButtonStop.Enabled := True;
+        ButtonStart.Enabled := false;
+      End;
+
+end;
+
+procedure TMainForm.ButtonStopClick(Sender: TObject);
+begin
+ServerContainer1.Server.Stop;
+ ButtonStop.Enabled := false;
+        ButtonStart.Enabled :=True ;
+end;
+
+end.
+

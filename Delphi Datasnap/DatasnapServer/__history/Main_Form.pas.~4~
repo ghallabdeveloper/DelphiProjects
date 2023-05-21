@@ -1,0 +1,40 @@
+unit Main_Form;
+
+interface
+
+uses Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs,
+  FMX.StdCtrls, FMX.Edit, FMX.Types, FMX.Controls.Presentation;
+
+type
+  TMainForm = class(TForm)
+    ButtonStart: TButton;
+    EditTcpPort: TEdit;
+    Label2: TLabel;
+    EdithttpPort: TEdit;
+    Label1: TLabel;
+    ButtonStop: TButton;
+    procedure ButtonStartClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  MainForm: TMainForm;
+
+implementation
+
+uses
+  ServerContainerUnit1;
+
+{$R *.fmx}
+
+procedure TMainForm.ButtonStartClick(Sender: TObject);
+begin
+ServerContainer1.Server.Start;
+end;
+
+end.
+

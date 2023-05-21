@@ -1,0 +1,246 @@
+object MethodAdmin: TMethodAdmin
+  OldCreateOrder = False
+  OnCreate = DSServerModuleCreate
+  Height = 337
+  Width = 536
+  object Conn: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=SQLNCLI11.1;Integrated Security="";Persist Security Inf' +
+      'o=False;User ID=sa;Initial Catalog=ClubDB;Data Source=WINCTRL-VS' +
+      '9CSJK\SQLEXPRESS2014;Initial File Name="";Server SPN="";'
+    LoginPrompt = False
+    Provider = 'SQLNCLI11.1'
+    Left = 168
+    Top = 56
+  end
+  object dsAgr: TADODataSet
+    Active = True
+    Connection = Conn
+    CursorType = ctStatic
+    CommandText = 'select * from Agr'
+    Parameters = <>
+    Left = 224
+    Top = 56
+    object dsAgrAgr_id: TIntegerField
+      FieldName = 'Agr_id'
+    end
+    object dsAgrBadge: TStringField
+      FieldName = 'Badge'
+    end
+    object dsAgrAgr_date: TIntegerField
+      FieldName = 'Agr_date'
+    end
+    object dsAgrCust_id: TIntegerField
+      FieldName = 'Cust_id'
+    end
+    object dsAgrDate_end: TIntegerField
+      FieldName = 'Date_end'
+    end
+    object dsAgrDate_start: TIntegerField
+      FieldName = 'Date_start'
+    end
+    object dsAgrIs_active: TBooleanField
+      FieldName = 'Is_active'
+    end
+    object dsAgrJoin_id: TSmallintField
+      FieldName = 'Join_id'
+    end
+    object dsAgrDisc_a: TBCDField
+      FieldName = 'Disc_a'
+      Precision = 19
+    end
+    object dsAgrDisc_b: TBCDField
+      FieldName = 'Disc_b'
+      Precision = 19
+    end
+    object dsAgrCredit_limit: TBCDField
+      FieldName = 'Credit_limit'
+      Precision = 19
+    end
+    object dsAgrCredits: TBCDField
+      FieldName = 'Credits'
+      Precision = 19
+    end
+    object dsAgrExtraCost: TBCDField
+      FieldName = 'ExtraCost'
+      Precision = 19
+    end
+    object dsAgrJoin_Cost: TBCDField
+      FieldName = 'Join_Cost'
+      Precision = 19
+    end
+    object dsAgrInsuranceCredits: TBCDField
+      FieldName = 'InsuranceCredits'
+      Precision = 19
+    end
+    object dsAgrInsuranceDebits: TBCDField
+      FieldName = 'InsuranceDebits'
+      Precision = 19
+    end
+    object dsAgrNet_cost: TBCDField
+      FieldName = 'Net_cost'
+      Precision = 19
+    end
+    object dsAgrTotal_cost: TBCDField
+      FieldName = 'Total_cost'
+      Precision = 19
+    end
+    object dsAgrIsFreeze: TBooleanField
+      FieldName = 'IsFreeze'
+    end
+    object dsAgrLastAutoUpdate: TIntegerField
+      FieldName = 'LastAutoUpdate'
+    end
+    object dsAgrFreeze_StartDate: TIntegerField
+      FieldName = 'Freeze_StartDate'
+    end
+    object dsAgrFreeze_EndDate: TIntegerField
+      FieldName = 'Freeze_EndDate'
+    end
+    object dsAgrIsactive_FinishDate: TIntegerField
+      FieldName = 'Isactive_FinishDate'
+    end
+    object dsAgrRemark: TMemoField
+      FieldName = 'Remark'
+      BlobType = ftMemo
+    end
+    object dsAgrKnowUS: TStringField
+      FieldName = 'KnowUS'
+      Size = 250
+    end
+    object dsAgrDeleted: TBooleanField
+      FieldName = 'Deleted'
+    end
+    object dsAgrRate_type: TSmallintField
+      FieldName = 'Rate_type'
+    end
+    object dsAgrFreq: TSmallintField
+      FieldName = 'Freq'
+    end
+    object dsAgrTaxAmount: TFloatField
+      FieldName = 'TaxAmount'
+    end
+    object dsAgrTaxPercent: TFloatField
+      FieldName = 'TaxPercent'
+    end
+    object dsAgrtime_id: TIntegerField
+      FieldName = 'time_id'
+    end
+    object dsAgrTime_start: TIntegerField
+      FieldName = 'Time_start'
+    end
+    object dsAgrTime_end: TIntegerField
+      FieldName = 'Time_end'
+    end
+    object dsAgrIsAutoUnFreeze: TBooleanField
+      FieldName = 'IsAutoUnFreeze'
+    end
+    object dsAgrUser_Id: TIntegerField
+      FieldName = 'User_Id'
+    end
+    object dsAgrLast_User_Id: TIntegerField
+      FieldName = 'Last_User_Id'
+    end
+    object dsAgrLast_MoDate: TIntegerField
+      FieldName = 'Last_MoDate'
+    end
+    object dsAgrLast_MoTime: TIntegerField
+      FieldName = 'Last_MoTime'
+    end
+    object dsAgrLast_ModType: TStringField
+      FieldName = 'Last_ModType'
+      Size = 200
+    end
+    object dsAgrstatus_ID: TIntegerField
+      FieldName = 'status_ID'
+    end
+    object dsAgrRow_id: TIntegerField
+      FieldName = 'Row_id'
+    end
+    object dsAgrIs_Rej: TBooleanField
+      FieldName = 'Is_Rej'
+    end
+    object dsAgrRej_Date: TIntegerField
+      FieldName = 'Rej_Date'
+    end
+    object dsAgrRej_Id: TIntegerField
+      FieldName = 'Rej_Id'
+    end
+    object dsAgrRej_debits: TBCDField
+      FieldName = 'Rej_debits'
+      Precision = 19
+    end
+    object dsAgrRej_Credits: TBCDField
+      FieldName = 'Rej_Credits'
+      Precision = 19
+    end
+    object dsAgrRej_Total_Cost: TBCDField
+      FieldName = 'Rej_Total_Cost'
+      Precision = 19
+    end
+    object dsAgrClass_id: TIntegerField
+      FieldName = 'Class_id'
+    end
+    object dsAgrIs_Amount: TBooleanField
+      FieldName = 'Is_Amount'
+    end
+  end
+  object ProviderAgr: TDataSetProvider
+    DataSet = dsAgr
+    Left = 272
+    Top = 56
+  end
+  object SQLDataSet1: TSQLDataSet
+    CommandText = 'select * from Agr'
+    MaxBlobSize = 1
+    Params = <>
+    SQLConnection = SQLConnection1
+    Left = 216
+    Top = 200
+  end
+  object SQLConnection1: TSQLConnection
+    ConnectionName = 'MSSQLConnection'
+    DriverName = 'MSSQL'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverUnit=Data.DBXMSSQL'
+      
+        'DriverPackageLoader=TDBXDynalinkDriverLoader,DBXCommonDriver260.' +
+        'bpl'
+      
+        'DriverAssemblyLoader=Borland.Data.TDBXDynalinkDriverLoader,Borla' +
+        'nd.Data.DbxCommonDriver,Version=24.0.0.0,Culture=neutral,PublicK' +
+        'eyToken=91d62ebb5b0d1b1b'
+      
+        'MetaDataPackageLoader=TDBXMsSqlMetaDataCommandFactory,DbxMSSQLDr' +
+        'iver260.bpl'
+      
+        'MetaDataAssemblyLoader=Borland.Data.TDBXMsSqlMetaDataCommandFact' +
+        'ory,Borland.Data.DbxMSSQLDriver,Version=24.0.0.0,Culture=neutral' +
+        ',PublicKeyToken=91d62ebb5b0d1b1b'
+      'GetDriverFunc=getSQLDriverMSSQL'
+      'LibraryName=dbxmss.dll'
+      'VendorLib=sqlncli10.dll'
+      'VendorLibWin64=sqlncli10.dll'
+      'MaxBlobSize=-1'
+      'OSAuthentication=False'
+      'PrepareSQL=True'
+      'SchemaOverride=sa.dbo'
+      'DriverName=MSSQL'
+      'HostName=WINCTRL-VS9CSJK\SQLEXPRESS2014'
+      'Database=ClubDB'
+      'User_Name=sa'
+      'Password=123'
+      'BlobSize=-1'
+      'ErrorResourceFile='
+      'LocaleCode=0000'
+      'IsolationLevel=ReadCommitted'
+      'OS Authentication=False'
+      'Prepare SQL=False'
+      'ConnectTimeout=60'
+      'Mars_Connection=False')
+    Left = 144
+    Top = 216
+  end
+end

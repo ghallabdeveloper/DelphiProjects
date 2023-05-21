@@ -1,0 +1,38 @@
+object MethodAdmin: TMethodAdmin
+  OldCreateOrder = False
+  OnCreate = DSServerModuleCreate
+  Height = 337
+  Width = 536
+  object Conn: TADOConnection
+    ConnectionString = 
+      'Provider=SQLNCLI11.1;Integrated Security="";Persist Security Inf' +
+      'o=False;User ID=sa;Initial Catalog=ClubDB;Data Source=WINCTRL-VS' +
+      '9CSJK\SQLEXPRESS2014;Initial File Name="";Server SPN="";'
+    LoginPrompt = False
+    Provider = 'SQLNCLI11.1'
+    Left = 168
+    Top = 56
+  end
+  object dsAgr: TADODataSet
+    Connection = Conn
+    CursorType = ctStatic
+    CommandText = 'select * from Agr'
+    Parameters = <>
+    Left = 80
+    Top = 128
+  end
+  object ProviderAgr: TDataSetProvider
+    DataSet = dsAgr
+    Left = 256
+    Top = 128
+  end
+  object SQLDataSet1: TSQLDataSet
+    Params = <>
+    Left = 376
+    Top = 208
+  end
+  object SQLConnection1: TSQLConnection
+    Left = 176
+    Top = 184
+  end
+end

@@ -1,0 +1,24 @@
+unit Main_Form;
+
+interface
+
+uses Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs;
+
+type
+  TMainForm = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  MainForm: TMainForm;
+
+implementation
+
+{$R *.fmx}
+
+end.
+

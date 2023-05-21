@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/06 17:05:52.000.846,=C:\Users\John\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/06 17:06:06.000.668,C:\Datasnaps\DatasnapProje\Datasnapclient\Unit1.pas=C:\Users\John\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/06 17:06:06.000.668,C:\Datasnaps\DatasnapProje\Datasnapclient\Unit1.fmx=C:\Users\John\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2023/05/06 17:06:13.000.906,C:\Datasnaps\DatasnapProje\Datasnapclient\DsClient.dproj=C:\Users\John\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2023/05/06 17:06:35.000.684,C:\Datasnaps\DatasnapProje\Datasnapclient\main_form.fmx=C:\Datasnaps\DatasnapProje\Datasnapclient\Unit1.fmx</Transaction>
+    <Transaction>2023/05/06 17:06:35.000.684,C:\Datasnaps\DatasnapProje\Datasnapclient\main_form.pas=C:\Datasnaps\DatasnapProje\Datasnapclient\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
