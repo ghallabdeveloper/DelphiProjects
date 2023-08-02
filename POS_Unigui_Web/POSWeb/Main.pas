@@ -84,7 +84,7 @@ end;
 
 procedure TMainForm.btnItemsListClick(Sender: TObject);
 begin
-   ItemsList.show();
+   ItemsListView();
 end;
 
 procedure TMainForm.btnLoginClick(Sender: TObject);

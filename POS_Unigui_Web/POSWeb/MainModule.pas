@@ -6,7 +6,7 @@ uses
   uniGUIMainModule, SysUtils, Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
   FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.VCLUI.Wait,
-  Data.DB, FireDAC.Comp.Client,inifiles, FireDAC.Phys.MSSQL,
+  Data.DB, FireDAC.Comp.Client, inifiles, FireDAC.Phys.MSSQL,
   FireDAC.Phys.MSSQLDef, FireDAC.Phys.ODBCBase, FireDAC.Stan.Param,
   FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet;
 
@@ -18,17 +18,19 @@ type
   private
     { Private declarations }
   public
-   mUserName:string;
-   pserverPath:string;
-    mdbdatabaseName:string;
-    mdbserverName,mdbUserName,mdbPassword:string;
+    mUserName: string;
+    pserverPath: string;
+    mdbdatabaseName: string;
+    mdbserverName, mdbUserName, mdbPassword: string;
     { Public declarations }
-   function  CheckDBconnection():Boolean;
-   procedure SaveDBSetting();
-   procedure readDBSetting();
-   function getfirdacconectionString():string;
-   function OpenRecordSer(SQL: string ;Readonly: Boolean ): TFDQuery;
-   function Dlookup(tablename:string;Fieldname:string;cri :string):Variant;
+    function CheckDBconnection(): Boolean;
+    procedure SaveDBSetting();
+    procedure readDBSetting();
+    function getfirdacconectionString(): string;
+    function OpenRecordSer(SQL: string; Readonly: Boolean): TFDQuery;
+    procedure Settable(SQL: string; var fquery: TFDQuery);
+    function Dlookup(tablename: string; Fieldname: string; cri: string)
+      : Variant;
   end;
 
 function UniMainModule: TUniMainModule;
@@ -46,164 +48,189 @@ begin
 end;
 
 function TUniMainModule.CheckDBconnection: Boolean;
- begin
-   Result := false;
-   if DBConn.Connected  then
-   Begin
-     Result := True;
-     Exit;
-   End;
+begin
+  Result := false;
+  if DBConn.Connected then
+  Begin
+    Result := True;
+    Exit;
+  End;
 
-   readDBSetting();
-   try
-    //DBConn.ConnectionString := getfirdacconectionString();
-   // DBConn.Params.Clear;
+  readDBSetting();
+  try
+    // DBConn.ConnectionString := getfirdacconectionString();
+    // DBConn.Params.Clear;
     with DBConn.Params do
     Begin
-     AddPair('DriverID','MSSQL');
-  AddPair('Server',mdbserverName);
-  AddPair('User_Name',mdbUserName);
-  AddPair('Password=',mdbPassword);
-  AddPair('Database=',mdbdatabaseName);
-  AddPair('MetaDefSchema','dbo');
-  AddPair('MetaDefCatalog',mdbdatabaseName);
-    Add('OSAuthent=No');
+      AddPair('DriverID', 'MSSQL');
+      AddPair('Server', mdbserverName);
+      AddPair('User_Name', mdbUserName);
+      AddPair('Password=', mdbPassword);
+      AddPair('Database=', mdbdatabaseName);
+      AddPair('MetaDefSchema', 'dbo');
+      AddPair('MetaDefCatalog', mdbdatabaseName);
+      Add('OSAuthent=No');
 
     End;
-//DBConn.Connected := True;
-  DBConn.LoginPrompt := False;
+    // DBConn.Connected := True;
+    DBConn.LoginPrompt := false;
     DBConn.Open;
-   except
-      on E: Exception do
-      Begin
+  except
+    on E: Exception do
+    Begin
 
-       Result := False;
-       Exit;
-      End;
-   end;
+      Result := false;
+      Exit;
+    End;
+  end;
 
-   if DBConn.Connected then
-   Begin
-     result := True;
-     Exit;
-   End;
-
+  if DBConn.Connected then
+  Begin
+    Result := True;
+    Exit;
+  End;
 
 end;
 
-
 function TUniMainModule.getfirdacconectionString: string;
 var
- ConnectionString:string;
+  ConnectionString: string;
 begin
-  ConnectionString :='DriverID=MSSQL;Server='+mdbserverName+';Database='+mdbdatabaseName+';User_name='+mdbUserName+ ';Password='+mdbPassword;
+  ConnectionString := 'DriverID=MSSQL;Server=' + mdbserverName + ';Database=' +
+    mdbdatabaseName + ';User_name=' + mdbUserName + ';Password=' + mdbPassword;
 end;
 
 procedure TUniMainModule.readDBSetting;
 var
- IniFile:TIniFile;
+  IniFile: TIniFile;
 begin
-   try
-   IniFile := TIniFile.Create(pserverPath+'\POSWeb.ini');
-mdbdatabaseName :=    IniFile.ReadString('Connection','dbname','');
-   mdbserverName :=    IniFile.ReadString('Connection','servername','');
-mdbUserName :=       IniFile.ReadString('Connection','username','');
-mdbPassword :=       IniFile.ReadString('Connection','password','');
-   except
+  try
+    IniFile := TIniFile.Create(pserverPath + '\POSWeb.ini');
+    mdbdatabaseName := IniFile.ReadString('Connection', 'dbname', '');
+    mdbserverName := IniFile.ReadString('Connection', 'servername', '');
+    mdbUserName := IniFile.ReadString('Connection', 'username', '');
+    mdbPassword := IniFile.ReadString('Connection', 'password', '');
+  except
 
-end;
+  end;
 end;
 
 procedure TUniMainModule.SaveDBSetting;
 var
- IniFile:TIniFile;
+  IniFile: TIniFile;
 begin
-try
-   IniFile := TIniFile.Create(pserverPath+'\POSWeb.ini');
-   IniFile.WriteString('Connection','dbname',mdbdatabaseName);
-   IniFile.WriteString('Connection','servername',mdbserverName);
-   IniFile.WriteString('Connection','username',mdbUserName);
-   IniFile.WriteString('Connection','password',mdbPassword);
-   except
+  try
+    IniFile := TIniFile.Create(pserverPath + '\POSWeb.ini');
+    IniFile.WriteString('Connection', 'dbname', mdbdatabaseName);
+    IniFile.WriteString('Connection', 'servername', mdbserverName);
+    IniFile.WriteString('Connection', 'username', mdbUserName);
+    IniFile.WriteString('Connection', 'password', mdbPassword);
+  except
 
-end;
-//   aWorkTime := IniFile.ReadString('Filename', 'Work Time', '<none>');
+  end;
+  // aWorkTime := IniFile.ReadString('Filename', 'Work Time', '<none>');
 end;
 
 procedure TUniMainModule.UniGUIMainModuleCreate(Sender: TObject);
 begin
-mUserName :='0';
+  mUserName := '0';
   pserverPath := ExtractFilePath(UniServerModule.StartPath);
 end;
 
 {$REGION 'db Operation '}
 
-function TUniMainModule.OpenRecordSer(SQL: string ;Readonly: Boolean ): TFDQuery;
+function TUniMainModule.OpenRecordSer(SQL: string; Readonly: Boolean): TFDQuery;
 var
-fquery: TFDQuery;
+  fquery: TFDQuery;
 begin
-    try
-      fquery := TFDQuery.Create(DBConn);
-      fquery.Connection := DBConn;
-       if fquery .Active  then
-       fquery .Active := false;
+  try
+    fquery := TFDQuery.Create(DBConn);
+    fquery.Connection := DBConn;
+    if fquery.Active then
+      fquery.Active := false;
 
-       fquery.SQL.Text := SQL;
-       fquery.Open();
-        If ReadOnly Then
-    fquery.UpdateOptions.LockMode := lmPessimistic
-  Else
-    fquery.UpdateOptions.LockMode := lmOptimistic;
+    fquery.SQL.Text := SQL;
+    fquery.Open();
+    If ReadOnly Then
+      fquery.UpdateOptions.LockMode := lmPessimistic
+    Else
+      fquery.UpdateOptions.LockMode := lmOptimistic;
 
-    except
-      on E: Exception do
-      Begin
+  except
+    on E: Exception do
+    Begin
 
-       Result := nil;
-       Exit;
-      End;
-    end;
-
-end;
-  function TUniMainModule.Dlookup(tablename, Fieldname, cri: string): Variant;
-
-var
-fquery: TFDQuery;
-SQl : string;
-begin
-Result := 0;
-    try
-      fquery := TFDQuery.Create(DBConn);
-      fquery.Connection := DBConn;
-       if fquery .Active  then
-       fquery .Active := false;
-      SQl := 'select ' + Fieldname + ' from ' +tablename;
-      if cri <> ''  then
-      sql := SQl + ' where ' + cri;
-
-       fquery.SQL.Text := SQL;
-       fquery.Open();
-       if not fquery.IsEmpty then
-       begin
-        if not  fquery.Fields[0].IsNull then
-          Result := fquery.Fields[0].Value;
-       end;
-        fquery.Close;
-        FreeAndNil(fquery);
-
-    except
-      on E: Exception do
-      Begin
-
-       Result := False;
-       Exit;
-      End;
-    end;
-
+      Result := nil;
+      Exit;
+    End;
+  end;
 
 end;
 
+function TUniMainModule.Dlookup(tablename, Fieldname, cri: string): Variant;
+
+var
+  fquery: TFDQuery;
+  SQL: string;
+begin
+  Result := 0;
+  try
+    fquery := TFDQuery.Create(DBConn);
+    fquery.Connection := DBConn;
+    if fquery.Active then
+      fquery.Active := false;
+    SQL := 'select ' + Fieldname + ' from ' + tablename;
+    if cri <> '' then
+      SQL := SQL + ' where ' + cri;
+
+    fquery.SQL.Text := SQL;
+    fquery.Open();
+    if not fquery.IsEmpty then
+    begin
+      if not fquery.Fields[0].IsNull then
+        Result := fquery.Fields[0].Value;
+    end;
+    fquery.Close;
+    FreeAndNil(fquery);
+
+  except
+    on E: Exception do
+    Begin
+
+      Result := false;
+      Exit;
+    End;
+  end;
+
+end;
+
+procedure TUniMainModule.Settable(SQL: string; var fquery: TFDQuery);
+begin
+  try
+
+    fquery.Connection := DBConn;
+    if fquery.Active then
+      fquery.Active := false;
+
+    fquery.SQL.Text := SQL;
+    fquery.Open();
+    // If ReadOnly Then
+    // fquery.UpdateOptions.LockMode := lmPessimistic
+    // Else
+    // fquery.UpdateOptions.LockMode := lmOptimistic;
+
+  except
+    on E: Exception do
+    Begin
+
+      Exit;
+    End;
+  end;
+end;
 {$ENDREGION}
+
 initialization
-  RegisterMainModuleClass(TUniMainModule);
+
+RegisterMainModuleClass(TUniMainModule);
+
 end.

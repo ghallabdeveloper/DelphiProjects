@@ -1,43 +1,42 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas',0,1,54,1,65,0,0,,
-File_1=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCWrapper.pas',0,1,5823,1,5835,0,0,,
-File_2=TSourceModule,'C:\MyWork\ERP\POSWeb\common\Common_Classes.pas',0,1,1,1,5,0,0,,
-File_3=TSourceModule,'C:\MyWork\ERP\ERP(1.0.8)_011_Stable\ERP\Sources\Database\Data_Module.pas',0,1,24,1,65,0,0,,
-File_4=TSourceModule,'C:\MyWork\ERP\POSWeb\ServerModule.pas',0,1,16,23,26,0,0,,
-File_5=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Database\Database_connection.pas',0,1,55,35,66,0,0,,
-File_6=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.pas',0,1,3337,1,3353,0,0,,
-File_7=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Comp.Client.pas',0,1,4208,1,4218,0,0,,
-File_8=TSourceModule,'C:\Program Files (x86)\FMSoft\Framework\uniGUI\Source\Components\uniButton.pas',0,1,518,1,529,0,0,,
-File_9=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\source\rtl\common\System.IniFiles.pas',0,1,1210,1,1222,0,0,,
-File_10=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas',0,1,1,1,1,0,0,,
-File_11=TSourceModule,'C:\Users\John\Desktop\ERP\Sources\Common\General_Search.pas',0,1,1,1,1,0,0,,
-File_12=TSourceModule,'C:\Users\John\Desktop\ERP\Sources\Common\Stock\Select_Item.pas',0,1,1,1,1,0,0,,
-File_13=TSourceModule,'C:\Users\John\Desktop\ERP\Sources\Stock\Setup\Item_edit.pas',0,1,1,1,1,0,0,,
-File_14=TSourceModule,'C:\Users\John\Desktop\ERP\Sources\Stock\Setup\Item_List.pas',0,1,1,1,1,0,0,,
+File_0=TSourceModule,'C:\MyWork\ERP\ERP(1.0.8)_011_Stable\ERP\Sources\Sales\Operation\Sales_Invoice.pas',0,1,1,1,1,0,0,,
+File_1=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Items\Item_list.dfm',0,1,1,1,1,0,0,,
+File_2=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Items\Item_list.pas',0,1,1,1,1,0,0,,
+File_3=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas',0,1,10,20,40,0,0,,
+File_4=TSourceModule,'C:\MyWork\ERP\ERP(1.0.8)_011_Stable\ERP\Sources\Database\Archive_New.pas',0,1,225,24,244,0,0,,
+File_5=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCWrapper.pas',0,1,5823,1,5835,0,0,,
+File_6=TSourceModule,'C:\MyWork\ERP\POSWeb\common\Common_Classes.pas',0,1,1,1,5,0,0,,
+File_7=TSourceModule,'C:\MyWork\ERP\ERP(1.0.8)_011_Stable\ERP\Sources\Database\Data_Module.pas',0,1,24,1,65,0,0,,
+File_8=TSourceModule,'C:\MyWork\ERP\POSWeb\ServerModule.pas',0,1,16,23,26,0,0,,
+File_9=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Database\Database_connection.pas',0,1,55,35,66,0,0,,
+File_10=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.pas',0,1,3337,1,3353,0,0,,
+File_11=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Comp.Client.pas',0,1,4208,1,4218,0,0,,
+File_12=TSourceModule,'C:\Program Files (x86)\FMSoft\Framework\uniGUI\Source\Components\uniButton.pas',0,1,518,1,529,0,0,,
+File_13=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\source\rtl\common\System.IniFiles.pas',0,1,1210,1,1222,0,0,,
 
 [Modules]
-Module0=C:\MyWork\ERP\POSWeb\Main.pas
-Module1=C:\MyWork\ERP\POSWeb\Sources\Items\Item_list.pas
+Module0=C:\MyWork\ERP\POSWeb\Sources\Items\Item_list.pas
+Module1=C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas
 Module2=C:\MyWork\ERP\POSWeb\MainModule.pas
-Module3=C:\MyWork\ERP\ERP(1.0.8)_011_Stable\ERP\Sources\Database\Archive_New.pas
+Module3=C:\MyWork\ERP\POSWeb\Main.pas
 Count=4
 EditWindowCount=1
 
-[C:\MyWork\ERP\POSWeb\Main.pas]
+[C:\MyWork\ERP\POSWeb\Sources\Items\Item_list.pas]
 ModuleType=TSourceModule
 
-[C:\MyWork\ERP\POSWeb\Sources\Items\Item_list.pas]
+[C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas]
 ModuleType=TSourceModule
 
 [C:\MyWork\ERP\POSWeb\MainModule.pas]
 ModuleType=TSourceModule
 
-[C:\MyWork\ERP\ERP(1.0.8)_011_Stable\ERP\Sources\Database\Archive_New.pas]
+[C:\MyWork\ERP\POSWeb\Main.pas]
 ModuleType=TSourceModule
 
 [EditWindow0]
 ViewCount=4
-CurrentEditView=C:\MyWork\ERP\POSWeb\Main.pas
+CurrentEditView=C:\MyWork\ERP\POSWeb\Sources\Items\Item_list.pas
 View0=0
 View1=1
 View2=2
@@ -63,7 +62,7 @@ LeftPanelClients=PropertyInspector,DockSite3
 LeftPanelData=0000080001010100000009000000446F636B5369746533650F0000000000000169070000000000000100000000921A00001100000050726F7065727479496E73706563746F72FFFFFFFF
 RightPanelSize=2000
 RightPanelClients=DockSite2,DockSite4
-RightPanelData=00000800010100000000650F00000000000001D00700000000000001000000007914000009000000446F636B53697465320100000000921A000009000000446F636B5369746534FFFFFFFF
+RightPanelData=00000800010100000000650F00000000000001D0070000000000000100000000580C000009000000446F636B53697465320100000000921A000009000000446F636B5369746534FFFFFFFF
 BottomPanelSize=1726
 BottomPanelClients=DockSite1,MessageView
 BottomPanelData=0000080001020100000009000000446F636B5369746531283F00000000000002BE060000000000000100000000283F00000F0000004D65737361676556696577466F726DFFFFFFFF
@@ -74,20 +73,20 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 [View0]
 CustomEditViewType=TEditView
 Module=C:\MyWork\ERP\POSWeb\Main.pas
-CursorX=36
-CursorY=75
-TopLine=73
+CursorX=4
+CursorY=87
+TopLine=85
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=Borland.FormDesignerView
+EditViewName=C:\MyWork\ERP\POSWeb\Main.pas
 
 [View1]
 CustomEditViewType=TEditView
-Module=C:\MyWork\ERP\POSWeb\Sources\Items\Item_list.pas
+Module=C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas
 CursorX=1
-CursorY=1
-TopLine=1
+CursorY=59
+TopLine=47
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -97,23 +96,23 @@ EditViewName=Borland.FormDesignerView
 CustomEditViewType=TEditView
 Module=C:\MyWork\ERP\POSWeb\MainModule.pas
 CursorX=1
-CursorY=204
-TopLine=192
+CursorY=211
+TopLine=199
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\MyWork\ERP\POSWeb\MainModule.pas
+EditViewName=Borland.FormDesignerView
 
 [View3]
 CustomEditViewType=TEditView
-Module=C:\MyWork\ERP\ERP(1.0.8)_011_Stable\ERP\Sources\Database\Archive_New.pas
-CursorX=24
-CursorY=244
-TopLine=225
+Module=C:\MyWork\ERP\POSWeb\Sources\Items\Item_list.pas
+CursorX=1
+CursorY=86
+TopLine=72
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\MyWork\ERP\ERP(1.0.8)_011_Stable\ERP\Sources\Database\Archive_New.pas
+EditViewName=Borland.FormDesignerView
 
 [UndockedDesigner]
 Count=0
@@ -143,10 +142,8 @@ Dockable=1
 StayOnTop=0
 
 [Breakpoints]
-Count=3
+Count=1
 Breakpoint0='C:\MyWork\ERP\POSWeb\Sources\Database\Database_connection.pas',57,'',0,1,'',1,0,0,'',1,'','','',0,''
-Breakpoint1='C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas',57,'',0,1,'',1,0,0,'',1,'','','',0,''
-Breakpoint2='C:\MyWork\ERP\POSWeb\MainModule.pas',174,'',0,1,'',1,0,0,'',1,'','','',0,''
 
 [EmbarcaderoWin32Debugger_AddressBreakpoints]
 Count=0
@@ -180,11 +177,11 @@ State=0
 Left=0
 Top=0
 Width=2096
-Height=4480
+Height=2398
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2096
-ClientHeight=4480
+ClientHeight=2398
 TBDockHeight=5901
 LRDockWidth=2350
 Dockable=1
@@ -218,12 +215,12 @@ State=0
 Left=0
 Top=0
 Width=2096
-Height=1256
+Height=3338
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2096
-ClientHeight=1256
-TBDockHeight=7145
+ClientHeight=3338
+TBDockHeight=7157
 LRDockWidth=1995
 Dockable=1
 StayOnTop=0
@@ -237,12 +234,12 @@ State=0
 Left=0
 Top=0
 Width=2851
-Height=5660
+Height=5647
 MaxLeft=-8
 MaxTop=-13
-ClientWidth=2758
-ClientHeight=5178
-TBDockHeight=5660
+ClientWidth=2789
+ClientHeight=5305
+TBDockHeight=5647
 LRDockWidth=2851
 Dockable=1
 StayOnTop=0
@@ -253,15 +250,15 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-21
-Top=-105
+Left=-20
+Top=-104
 Width=1849
-Height=3160
+Height=3147
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1849
-ClientHeight=3160
-TBDockHeight=3160
+ClientHeight=3147
+TBDockHeight=3147
 LRDockWidth=1849
 Dockable=1
 StayOnTop=0
@@ -349,8 +346,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-1015
-Top=159
+Left=-1014
+Top=160
 Width=277
 Height=368
 MaxLeft=-1
@@ -516,7 +513,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=2334
 ClientHeight=1117
-TBDockHeight=1142
+TBDockHeight=1155
 LRDockWidth=3675
 Dockable=1
 StayOnTop=0
@@ -554,8 +551,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=279
-Top=618
+Left=278
+Top=617
 Width=2858
 Height=3211
 MaxLeft=-1
@@ -581,7 +578,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=3821
 ClientHeight=1066
-TBDockHeight=1561
+TBDockHeight=1548
 LRDockWidth=8744
 Dockable=1
 StayOnTop=0
@@ -712,11 +709,11 @@ State=0
 Left=0
 Top=24
 Width=2096
-Height=4835
+Height=2754
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2096
-ClientHeight=4835
+ClientHeight=2754
 TBDockHeight=9010
 LRDockWidth=2096
 Dockable=1
@@ -758,13 +755,13 @@ Visible=1
 Docked=1
 State=0
 Left=0
-Top=437
+Top=273
 Width=2096
-Height=1256
+Height=3338
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2096
-ClientHeight=1256
+ClientHeight=3338
 TBDockHeight=9010
 LRDockWidth=2096
 Dockable=1

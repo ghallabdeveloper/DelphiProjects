@@ -17,6 +17,20 @@ type
     btn_Cancel: TUniSpeedButton;
     UniPanel3: TUniPanel;
     UniImage1: TUniImage;
+    Toolbar2: TUniPanel;
+    btnClose: TUniSpeedButton;
+    btnLast: TUniSpeedButton;
+    btnPrior: TUniSpeedButton;
+    btnNext: TUniSpeedButton;
+    btnFirst: TUniSpeedButton;
+    btnPrint: TUniSpeedButton;
+    btnReject: TUniSpeedButton;
+    btnRefresh: TUniSpeedButton;
+    btnCancel: TUniSpeedButton;
+    btnAdd: TUniSpeedButton;
+    btnDel: TUniSpeedButton;
+    btnSave: TUniSpeedButton;
+    btnGoto: TUniSpeedButton;
   private
     { Private declarations }
   public
