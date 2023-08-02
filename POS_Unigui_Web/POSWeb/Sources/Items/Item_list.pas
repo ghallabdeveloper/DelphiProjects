@@ -9,7 +9,7 @@ uses
   uniSpeedButton, uniLabel, uniGUIBaseClasses, uniPanel;
 
 type
-  TUniForm2 = class(TUniForm)
+  TItemsList = class(TUniForm)
     UniPanel1: TUniPanel;
     UniLabel1: TUniLabel;
     UniPanel2: TUniPanel;
@@ -23,7 +23,7 @@ type
     { Public declarations }
   end;
 
-function UniForm2: TUniForm2;
+function ItemsList: TItemsList;
 
 implementation
 
@@ -32,9 +32,9 @@ implementation
 uses
   MainModule, uniGUIApplication;
 
-function UniForm2: TUniForm2;
+function ItemsList: TItemsList;
 begin
-  Result := TUniForm2(UniMainModule.GetFormInstance(TUniForm2));
+  Result := TItemsList(UniMainModule.GetFormInstance(TItemsList));
 end;
 
 end.

@@ -1,9 +1,9 @@
-object UniForm3: TUniForm3
+object POSInvoice: TPOSInvoice
   Left = 0
   Top = 0
   ClientHeight = 376
   ClientWidth = 607
-  Caption = 'UniForm3'
+  Caption = 'POSInvoice'
   OldCreateOrder = False
   MonitoredKeys.Keys = <>
   PixelsPerInch = 96
@@ -18,12 +18,11 @@ object UniForm3: TUniForm3
     TabOrder = 0
     Caption = ''
     Color = clBlue
-    ExplicitTop = 8
     object UniLabel1: TUniLabel
       Left = 1
       Top = 1
-      Width = 106
-      Height = 24
+      Width = 605
+      Height = 71
       Hint = ''
       Alignment = taCenter
       AutoSize = False

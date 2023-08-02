@@ -17,8 +17,8 @@ uses
   Vcl.Styles,
   Sec_Log in 'Sources\Security\Sec_Log.pas' {SecLogin: TUniForm},
   Database_connection in 'Sources\Database\Database_connection.pas' {DataBaseConnectionGet: TUniForm},
-  Item_list in 'Sources\Items\Item_list.pas' {UniForm2: TUniForm},
-  Pos_Invoice in 'Sources\Operation\Pos_Invoice.pas' {UniForm3: TUniForm};
+  Item_list in 'Sources\Items\Item_list.pas' {ItemsList: TUniForm},
+  Pos_Invoice in 'Sources\Operation\Pos_Invoice.pas' {POSInvoice: TUniForm};
 
 {$R *.res}
 

@@ -52,6 +52,7 @@
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
         <Custom_Styles>Amakrits|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Amakrits.vsf;&quot;Amethyst Kamri|VCLSTYLE|$(BDSCOMMONDIR)\Styles\AmethystKamri.vsf&quot;;&quot;Aqua Graphite|VCLSTYLE|$(BDSCOMMONDIR)\Styles\AquaGraphite.vsf&quot;;&quot;Aqua Light Slate|VCLSTYLE|$(BDSCOMMONDIR)\Styles\AquaLightSlate.vsf&quot;;Auric|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Auric.vsf;Carbon|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Carbon.vsf;&quot;Charcoal Dark Slate|VCLSTYLE|$(BDSCOMMONDIR)\Styles\CharcoalDarkSlate.vsf&quot;;&quot;Cobalt XEMedia|VCLSTYLE|$(BDSCOMMONDIR)\Styles\CobaltXEMedia.vsf&quot;;&quot;Cyan Dusk|VCLSTYLE|$(BDSCOMMONDIR)\Styles\CyanDusk.vsf&quot;;&quot;Cyan Night|VCLSTYLE|$(BDSCOMMONDIR)\Styles\CyanNight.vsf&quot;;&quot;Emerald Light Slate|VCLSTYLE|$(BDSCOMMONDIR)\Styles\EmeraldLightSlate.vsf&quot;;Glossy|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Glossy.vsf;Glow|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Glow.vsf;&quot;Golden Graphite|VCLSTYLE|$(BDSCOMMONDIR)\Styles\GoldenGraphite.vsf&quot;;&quot;Iceberg Classico|VCLSTYLE|$(BDSCOMMONDIR)\Styles\IcebergClassico.vsf&quot;;&quot;Lavender Classico|VCLSTYLE|$(BDSCOMMONDIR)\Styles\LavenderClassico.vsf&quot;;Light|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Light.vsf;Luna|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Luna.vsf;&quot;Metropolis UI Black|VCLSTYLE|$(BDSCOMMONDIR)\Styles\MetropolisUIBlack.vsf&quot;;&quot;Metropolis UI Blue|VCLSTYLE|$(BDSCOMMONDIR)\Styles\MetropolisUIBlue.vsf&quot;;&quot;Metropolis UI Dark|VCLSTYLE|$(BDSCOMMONDIR)\Styles\MetropolisUIDark.vsf&quot;;&quot;Metropolis UI Green|VCLSTYLE|$(BDSCOMMONDIR)\Styles\MetropolisUIGreen.vsf&quot;;Obsidian|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Obsidian.vsf;&quot;Onyx Blue|VCLSTYLE|$(BDSCOMMONDIR)\Styles\OnyxBlue.vsf&quot;;&quot;Ruby Graphite|VCLSTYLE|$(BDSCOMMONDIR)\Styles\RubyGraphite.vsf&quot;;&quot;Sapphire Kamri|VCLSTYLE|$(BDSCOMMONDIR)\Styles\SapphireKamri.vsf&quot;;Silver|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Silver.vsf;Sky|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Sky.vsf;&quot;Slate Classico|VCLSTYLE|$(BDSCOMMONDIR)\Styles\SlateClassico.vsf&quot;;&quot;Smokey Quartz Kamri|VCLSTYLE|$(BDSCOMMONDIR)\Styles\SmokeyQuartzKamri.vsf&quot;;&quot;Tablet Light|VCLSTYLE|$(BDSCOMMONDIR)\Styles\TabletLight.vsf&quot;;TabletDark|VCLSTYLE|$(BDSCOMMONDIR)\Styles\TabletDark.vsf;&quot;Turquoise Gray|VCLSTYLE|$(BDSCOMMONDIR)\Styles\TurquoiseGray.vsf&quot;;Windows10|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10.vsf;&quot;Windows10 Blue|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10Blue.vsf&quot;;&quot;Windows10 Dark|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10Dark.vsf&quot;;&quot;Windows10 Green|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10Green.vsf&quot;;&quot;Windows10 Purple|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10Purple.vsf&quot;;&quot;Windows10 SlateGray|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10SlateGray.vsf&quot;</Custom_Styles>
+        <SanitizedProjectName>POSWeb</SanitizedProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <DCC_UsePackage>DBXSqliteDriver;dxFlowChartRS26;dxPSdxMapControlLnkRS26;DBXDb2Driver;vclactnband;dxBarRS26;vclFireDAC;dxFireDACEMFRS26;tethering;dxSpreadSheetInplaceRichEditRS26;FireDACADSDriver;dxRichEditCoreRS26;dxPSdxSpreadSheetLnkRS26;FireDACMSSQLDriver;vcltouch;vcldb;svn;dxPSTeeChartRS26;Pegasus2;dxGDIPlusRS26;dxPSdxFCLnkRS26;vclib;frxTee26;dxCloudServiceLibraryRS26;dxPSLnksRS26;FireDACDBXDriver;cxGridRS26;dxPsPrVwAdvRS26;dxPDFViewerRS26;vclx;dxPScxTLLnkRS26;RESTBackendComponents;uSynEdit_R2022;VCLRESTComponents;fsTee26;vclie;Wia_;bindengine;CloudService;dxmdsRS26;FireDACMySQLDriver;fsIBX26;frx26;dxdborRS26;DataSnapClient;dxFireDACServerModeRS26;bindcompdbx;DBXSybaseASEDriver;IndyIPServer;cxPivotGridRS26;IndySystem;fsADO26;frxDBX26;cxTreeListdxBarPopupMenuRS26;dsnapcon;cxTreeListRS26;dxPScxPivotGridLnkRS26;VirtualTreesR;cxSchedulerRibbonStyleEventEditorRS26;dxPSCoreRS26;FireDACMSAccDriver;fmxFireDAC;FireDACInfxDriver;vclimg;dxSpreadSheetRS26;dxBarExtItemsRS26;dxPSdxGaugeControlLnkRS26;emshosting;DBXOdbcDriver;FireDACTDataDriver;FMXTee;dxdbtrRS26;dxRichEditControlCoreRS26;soaprtl;DbxCommonDriver;AsyncProDR;dxFlowChartAdvancedCustomizeFormRS26;dxDockingRS26;xmlrtl;soapmidas;DataSnapNativeClient;fmxobj;cxLibraryRS26;rtl;emsserverresource;DbxClientDriver;DBXSybaseASADriver;dxPScxSchedulerLnkRS26;pdfpack;dxSpreadSheetConditionalFormattingDialogsRS26;appanalytics;dxRibbonCustomizationFormRS26;cxSchedulerGridRS26;IndyIPClient;bindcompvcl;dxFlowChartLayoutsRS26;TeeUI;dxADOEMFRS26;VclSmp;FireDACODBCDriver;dxRibbonRS26;DataSnapIndy10ServerTransport;dxPScxCommonRS26;dxRichEditDocumentModelRS26;DataSnapProviderClient;FireDACMongoDBDriver;dxFlowChartDesignerRS26;dxPScxGridLnkRS26;dxSpreadSheetCoreRS26;DataSnapServerMidas;RESTComponents;DBXInterBaseDriver;dxPScxExtCommonRS26;emsclientfiredac;DataSnapFireDAC;svnui;DBXMSSQLDriver;dxRichEditControlRS26;DatasnapConnectorsFreePascal;dxGaugeControlRS26;dxorgcRS26;dxPScxVGridLnkRS26;bindcompfmx;TMSWEBCorePkgLibDXE12;DBXOracleDriver;inetdb;dxBarDBNavRS26;dxDBXServerModeRS26;FmxTeeUI;emsedge;FireDACIBDriver;fmx;fmxdae;dxServerModeRS26;dxWizardControlRS26;dxTabbedMDIRS26;fs26;dxEMFRS26;dbexpress;IndyCore;dxComnRS26;frxIntIO26;dsnap;DataSnapCommon;emsclient;uniGUI26Chart;FireDACCommon;uniGUI26m;frxcs26;DataSnapConnectors;cxSchedulerTreeBrowserRS26;dxADOServerModeRS26;soapserver;cxPivotGridOLAPRS26;cxVerticalGridRS26;dxtrmdRS26;FireDACOracleDriver;DBXMySQLDriver;Pegasus;cxSchedulerRS26;cxSchedulerWebServiceStorageRS26;DBXFirebirdDriver;dxPSdxLCLnkRS26;FireDACCommonODBC;FireDACCommonDriver;TsiLang_XE103r;dxMapControlRS26;frxIntIOIndy26;inet;dxSpellCheckerRS26;IndyIPCommon;dxSpreadSheetCoreConditionalFormattingDialogsRS26;vcl;dxPSdxDBOCLnkRS26;frxDB26;FireDACDb2Driver;dxSpreadSheetReportDesignerRS26;RichEdot;dxPScxPCProdRS26;dxNavBarRS26;uniGUI26VCL;fsDB26;dxCoreRS26;cxExportRS26;TeeDB;FireDAC;jsondoc_rt;dxHttpIndyRequestRS26;dxPSPrVwRibbonRS26;frxe26;FireDACSqliteDriver;FireDACPgDriver;ibmonitor;FireDACASADriver;dxPSRichEditControlLnkRS26;cxPivotGridChartRS26;frxIBX26;dxPSDBTeeChartRS26;ibxpress;Tee;DataSnapServer;ibxbindings;dxPSdxDBTVLnkRS26;vclwinx;FireDACDSDriver;frxADO26;dxTileControlRS26;dxSkinsCoreRS26;CustomIPTransport;vcldsnap;bindcomp;dxPSdxOCLnkRS26;DBXInformixDriver;ZKP;TMSWEBCorePkgDXE12;dbxcds;adortl;dxSpreadSheetCoreDialogsRS26;dxBarExtDBItemsRS26;dsnapxml;dbrtl;inetdbxpress;IndyProtocols;Delphi_Twain;dxRichEditInplaceRS26;dxPSdxPDFViewerLnkRS26;SynEditR;fmxase;$(DCC_UsePackage)</DCC_UsePackage>
@@ -122,12 +123,12 @@
             <DesignClass>TUniForm</DesignClass>
         </DCCReference>
         <DCCReference Include="Sources\Items\Item_list.pas">
-            <Form>UniForm2</Form>
+            <Form>ItemsList</Form>
             <FormType>dfm</FormType>
             <DesignClass>TUniForm</DesignClass>
         </DCCReference>
         <DCCReference Include="Sources\Operation\Pos_Invoice.pas">
-            <Form>UniForm3</Form>
+            <Form>POSInvoice</Form>
             <FormType>dfm</FormType>
             <DesignClass>TUniForm</DesignClass>
         </DCCReference>
@@ -160,16 +161,16 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
+                <DeployFile LocalName="OutPut\POSWeb.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>POSWeb.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Grphics\Pos.png" Configuration="Debug" Class="UWP_DelphiLogo44">
                     <Platform Name="Win32">
                         <RemoteDir>Assets\</RemoteDir>
                         <RemoteName>Logo44x44.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="OutPut\POSWeb.exe" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="Win32">
-                        <RemoteName>POSWeb.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

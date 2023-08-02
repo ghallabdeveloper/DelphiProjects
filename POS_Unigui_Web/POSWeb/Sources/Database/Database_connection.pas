@@ -54,8 +54,18 @@ end;
 
 procedure TDataBaseConnectionGet.btn_OKClick(Sender: TObject);
 begin
+  UniMainModule.mdbdatabaseName := edtDBName.Text;
+  UniMainModule.mdbserverName := edtServerName.Text;
+  UniMainModule.mdbUserName := edtUserName.Text;
+  UniMainModule.mdbPassword := edtUserPass.Text;
+
+
+   UniMainModule.SaveDBSetting();
    ModalResult := mrOk;
 
 end;
+
+
+
 
 end.

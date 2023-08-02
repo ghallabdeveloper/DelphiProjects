@@ -9,7 +9,7 @@ uses
   uniSpeedButton, uniLabel, uniGUIBaseClasses, uniPanel;
 
 type
-  TUniForm3 = class(TUniForm)
+  TPOSInvoice = class(TUniForm)
     UniPanel1: TUniPanel;
     UniLabel1: TUniLabel;
     UniPanel2: TUniPanel;
@@ -23,7 +23,7 @@ type
     { Public declarations }
   end;
 
-function UniForm3: TUniForm3;
+function POSInvoice: TPOSInvoice;
 
 implementation
 
@@ -32,9 +32,9 @@ implementation
 uses
   MainModule, uniGUIApplication;
 
-function UniForm3: TUniForm3;
+function POSInvoice: TPOSInvoice;
 begin
-  Result := TUniForm3(UniMainModule.GetFormInstance(TUniForm3));
+  Result := TPOSInvoice(UniMainModule.GetFormInstance(TPOSInvoice));
 end;
 
 end.

@@ -1,9 +1,9 @@
-object UniForm2: TUniForm2
+object ItemsList: TItemsList
   Left = 0
   Top = 0
   ClientHeight = 358
   ClientWidth = 586
-  Caption = 'UniForm2'
+  Caption = 'ItemsList'
   OldCreateOrder = False
   MonitoredKeys.Keys = <>
   PixelsPerInch = 96
@@ -18,8 +18,6 @@ object UniForm2: TUniForm2
     TabOrder = 0
     Caption = ''
     Color = clBlue
-    ExplicitLeft = 136
-    ExplicitTop = 8
     object UniLabel1: TUniLabel
       Left = 217
       Top = 25
@@ -44,8 +42,6 @@ object UniForm2: TUniForm2
     TabOrder = 1
     Caption = ''
     Color = clBlue
-    ExplicitLeft = 136
-    ExplicitTop = 308
     object btn_OK: TUniSpeedButton
       Left = 488
       Top = 1
@@ -114,7 +110,6 @@ object UniForm2: TUniForm2
       ParentColor = False
       Color = clGradientActiveCaption
       TabOrder = 1
-      ExplicitLeft = 559
     end
     object btn_Cancel: TUniSpeedButton
       Left = 391
@@ -184,7 +179,6 @@ object UniForm2: TUniForm2
       ParentColor = False
       Color = clGradientActiveCaption
       TabOrder = 2
-      ExplicitLeft = 462
     end
   end
   object UniPanel3: TUniPanel
@@ -197,8 +191,6 @@ object UniForm2: TUniForm2
     TabOrder = 2
     Caption = ''
     Color = clTeal
-    ExplicitLeft = -8
-    ExplicitTop = 68
   end
   object UniImage1: TUniImage
     Left = 461

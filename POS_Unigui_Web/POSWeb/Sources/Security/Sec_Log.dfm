@@ -112,7 +112,6 @@ object SecLogin: TSecLogin
       Color = clGradientActiveCaption
       TabOrder = 1
       OnClick = btn_OKClick
-      ExplicitHeight = 71
     end
     object btn_Cancel: TUniSpeedButton
       Left = 367
@@ -183,8 +182,6 @@ object SecLogin: TSecLogin
       Color = clGradientActiveCaption
       TabOrder = 2
       OnClick = btn_CancelClick
-      ExplicitLeft = 464
-      ExplicitHeight = 71
     end
   end
   object UniPanel3: TUniPanel
@@ -197,7 +194,6 @@ object SecLogin: TSecLogin
     TabOrder = 2
     Caption = ''
     Color = clTeal
-    ExplicitTop = 74
     object UniLabel3: TUniLabel
       Left = 40
       Top = 120
@@ -216,6 +212,7 @@ object SecLogin: TSecLogin
       Width = 305
       Height = 41
       Hint = ''
+      PasswordChar = '*'
       Text = ''
       TabOrder = 2
     end

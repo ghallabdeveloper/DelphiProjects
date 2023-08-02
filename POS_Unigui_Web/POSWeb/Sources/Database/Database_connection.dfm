@@ -211,6 +211,7 @@ object DataBaseConnectionGet: TDataBaseConnectionGet
       Width = 305
       Height = 32
       Hint = ''
+      PasswordChar = '*'
       Text = ''
       TabOrder = 2
     end

@@ -6,7 +6,8 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics,
   Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
   uniGUIClasses, uniGUIForm, uniGUIBaseClasses, uniPanel, Vcl.Buttons, uniLabel,
-  uniButton, uniBitBtn, uniSpeedButton, uniEdit, dxGDIPlusClasses, uniImage;
+  uniButton, uniBitBtn, uniSpeedButton, uniEdit, dxGDIPlusClasses, uniImage,
+  uniGUIDialogs;
 
 type
   TSecLogin = class(TUniForm)
@@ -31,6 +32,7 @@ type
   end;
 
 function SecLogin: TSecLogin;
+procedure AppLog(CallBack: TUniDialogCallBackAnonProc);
 
 implementation
 
@@ -50,8 +52,39 @@ begin
 end;
 
 procedure TSecLogin.btn_OKClick(Sender: TObject);
+var
+  str : string;
+
 begin
+    if (trim (edtUserName.Text )<> '' ) and ((trim (edtUserPass.Text )<> '')) then
+    begin
+     str :=UniMainModule.Dlookup('userlist','User_Password',
+      'User_Name='''+edtUserName.Text+ ''' ') ;
+      if edtUserPass.Text = str then
+      begin
+
+
     ModalResult := mrOk;
+      end
+      else
+       self.MessageDlg('Erorr wrong username or password ', mtError, [mbOK], nil);
+
+    end
+    else
+    Begin
+       self.MessageDlg('Erorr wrong username or password ', mtError, [mbOK], nil);
+
+    End;
 end;
+
+procedure AppLog(CallBack: TUniDialogCallBackAnonProc);
+begin
+     with TSecLogin(UniMainModule.GetFormInstance(TSecLogin))do
+     begin
+       ShowModal(CallBack);
+
+     end;
+end;
+
 
 end.
