@@ -20,4 +20,15 @@ object UniMainModule: TUniMainModule
     Left = 352
     Top = 144
   end
+  object siLangDispatcher1: TsiLangDispatcher
+    ActiveLanguage = 1
+    NumOfLanguages = 3
+    LangNames.Strings = (
+      'English'
+      'Arabic'
+      '')
+    Language = 'English'
+    Left = 232
+    Top = 96
+  end
 end

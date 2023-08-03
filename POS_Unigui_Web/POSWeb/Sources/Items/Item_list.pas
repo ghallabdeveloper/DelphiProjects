@@ -11,7 +11,7 @@ uses
   FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
   FireDAC.Stan.Async, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
   FireDAC.Comp.Client, uniEdit, uniDBEdit, uniBasicGrid, uniDBGrid,
-  unimDBListGrid, unimDBGrid;
+  unimDBListGrid, unimDBGrid, siComp;
 
 type
   TItemsList = class(TUniForm)
@@ -44,6 +44,7 @@ type
     btnDel: TUniSpeedButton;
     btnSave: TUniSpeedButton;
     UniDBGrid1: TUniDBGrid;
+    siLang1: TsiLang;
     procedure btn_OKClick(Sender: TObject);
     procedure btnCloseClick(Sender: TObject);
     procedure btnbuttonclick(Sender: TObject);
@@ -55,6 +56,7 @@ type
     procedure fddb1AfterOpen(DataSet: TDataSet);
     procedure fddb1AfterPost(DataSet: TDataSet);
     procedure fddb1AfterScroll(DataSet: TDataSet);
+    procedure UniFormCreate(Sender: TObject);
   private
     procedure RefreshDBButton;
     { Private declarations }
@@ -207,6 +209,11 @@ begin
       btnLast.Enabled := true;
     end;
   End;
+end;
+
+procedure TItemsList.UniFormCreate(Sender: TObject);
+begin
+Self.RTL := UniMainModule.RTL;
 end;
 
 end.

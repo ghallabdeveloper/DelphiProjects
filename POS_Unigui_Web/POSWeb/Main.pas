@@ -7,7 +7,7 @@ uses
   Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
   uniGUIClasses, uniGUIRegClasses, uniGUIForm, uniGUIBaseClasses, uniPanel,
   uniMultiItem, uniComboBox, uniLabel, uniButton, uniBitBtn, uniSpeedButton,uniStrUtils,
-  dxGDIPlusClasses, uniImage;
+  dxGDIPlusClasses, uniImage, siComp;
 
 type
   TMainForm = class(TUniForm)
@@ -22,6 +22,7 @@ type
     pnlMenu: TUniPanel;
     btnPOSInvoice: TUniSpeedButton;
     btnItemsList: TUniSpeedButton;
+    siLang1: TsiLang;
     procedure UniFormCreate(Sender: TObject);
     procedure ThemeComboBoxChange(Sender: TObject);
     procedure btnLoginClick(Sender: TObject);
@@ -29,6 +30,7 @@ type
     procedure btnMainMenuClick(Sender: TObject);
     procedure btnItemsListClick(Sender: TObject);
     procedure btnPOSInvoiceClick(Sender: TObject);
+    procedure btnLanguageClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -65,6 +67,8 @@ begin
   for I := Low(S) to High(S) do
     ThemeComboBox.Items.Add(S[I]);
 
+    Self.RTL := UniMainModule.RTL;
+//     Self.Arabic := Self.RTL;
 end;
 
 procedure TMainForm.UniFormShow(Sender: TObject);
@@ -85,6 +89,14 @@ end;
 procedure TMainForm.btnItemsListClick(Sender: TObject);
 begin
    ItemsListView();
+end;
+
+procedure TMainForm.btnLanguageClick(Sender: TObject);
+begin
+ if Self.RTL  then
+    UniMainModule. SaveRTL(false)
+    else
+        UniMainModule. SaveRTL(true)
 end;
 
 procedure TMainForm.btnLoginClick(Sender: TObject);

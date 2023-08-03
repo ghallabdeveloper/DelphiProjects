@@ -8,20 +8,28 @@ uses
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.VCLUI.Wait,
   Data.DB, FireDAC.Comp.Client, inifiles, FireDAC.Phys.MSSQL,
   FireDAC.Phys.MSSQLDef, FireDAC.Phys.ODBCBase, FireDAC.Stan.Param,
-  FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet;
+  FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet, siComp;
 
 type
   TUniMainModule = class(TUniGUIMainModule)
     DBConn: TFDConnection;
     FDQuery1: TFDQuery;
+    siLangDispatcher1: TsiLangDispatcher;
     procedure UniGUIMainModuleCreate(Sender: TObject);
   private
+    function GetRTLStr(RemoteAddress, BrowserType, BrowserVersion,
+      OSType: string): string;
+
     { Private declarations }
   public
     mUserName: string;
     pserverPath: string;
     mdbdatabaseName: string;
     mdbserverName, mdbUserName, mdbPassword: string;
+     pRemoteAddress: string;
+  pBrowserType : string;
+  pBrowserVersion : string;
+  pOSType: string;
     { Public declarations }
     function CheckDBconnection(): Boolean;
     procedure SaveDBSetting();
@@ -31,6 +39,9 @@ type
     procedure Settable(SQL: string; var fquery: TFDQuery);
     function Dlookup(tablename: string; Fieldname: string; cri: string)
       : Variant;
+      procedure SetRTLMain(RemoteAddress, BrowserType, BrowserVersion,
+  OSType: string);
+   procedure SaveRTL(const Value: Boolean);
   end;
 
 function UniMainModule: TUniMainModule;
@@ -132,11 +143,74 @@ begin
 end;
 
 procedure TUniMainModule.UniGUIMainModuleCreate(Sender: TObject);
+var
+  IniFile: TIniFile;
 begin
   mUserName := '0';
   pserverPath := ExtractFilePath(UniServerModule.StartPath);
+
+ SetRTLMain(RemoteAddress, '0', '0', '0');
+
+end;
+function TUniMainModule.GetRTLStr(RemoteAddress, BrowserType, BrowserVersion,
+  OSType: string): string;
+
+var
+
+  str: string;
+begin
+  str := 'RTL_' + RemoteAddress;
+
+  str := str + '_' + BrowserType;
+  str := str + '_' + BrowserVersion;
+  str := str + '_' + OSType;
+  pRemoteAddress := RemoteAddress;
+  pBrowserType := BrowserType;
+  pBrowserVersion := BrowserVersion;
+  pOSType := OSType;
+  Result := str;
+end;
+procedure TUniMainModule.SetRTLMain(RemoteAddress, BrowserType, BrowserVersion,
+  OSType: string);
+var
+  Ini: TIniFile;
+  str: string;
+
+begin
+
+  str := GetRTLStr(RemoteAddress, BrowserType, BrowserVersion, OSType);
+  Ini :=  TIniFile.Create(pserverPath + '\POSWeb.ini');;
+  try
+    // Self.RTL := Ini.ReadBool('Lang', 'RTL', False);
+    Self.RTL := Ini.ReadBool('Lang', str, false);
+  finally
+    Ini.Free;
+  end;
+  if Self.RTL then
+  Begin
+    Self.siLangDispatcher1.Language := Self.siLangDispatcher1.LangNames[1];
+  End
+  else
+  Begin
+    Self.siLangDispatcher1.Language := Self.siLangDispatcher1.LangNames[0];
+  End;
 end;
 
+ procedure TUniMainModule.SaveRTL(const Value: Boolean);
+var
+  Ini: TIniFile;
+  str: string;
+begin
+  Ini :=  TIniFile.Create(pserverPath + '\POSWeb.ini');;
+  try
+    str := GetRTLStr(pRemoteAddress, pBrowserType, pBrowserVersion, pOSType);
+    Ini.WriteBool('Lang', str, Value);
+  finally
+    Ini.Free;
+  end;
+
+  (UniApplication as TUniGUIApplication).Restart;
+end;
 {$REGION 'db Operation '}
 
 function TUniMainModule.OpenRecordSer(SQL: string; Readonly: Boolean): TFDQuery;

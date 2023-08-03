@@ -7,7 +7,7 @@ uses
   Controls, Forms, uniGUITypes, uniGUIAbstractClasses,
   uniGUIClasses, uniGUIForm, uniGUIBaseClasses, uniPanel, Vcl.Buttons, uniLabel,
   uniButton, uniBitBtn, uniSpeedButton, uniEdit, dxGDIPlusClasses, uniImage,
-  uniGUIDialogs;
+  uniGUIDialogs, siComp;
 
 type
   TSecLogin = class(TUniForm)
@@ -22,8 +22,10 @@ type
     edtUserName: TUniEdit;
     edtUserPass: TUniEdit;
     UniImage1: TUniImage;
+    siLang1: TsiLang;
     procedure btn_OKClick(Sender: TObject);
     procedure btn_CancelClick(Sender: TObject);
+    procedure UniFormCreate(Sender: TObject);
 
   private
     { Private declarations }
@@ -75,6 +77,11 @@ begin
        self.MessageDlg('Erorr wrong username or password ', mtError, [mbOK], nil);
 
     End;
+end;
+
+procedure TSecLogin.UniFormCreate(Sender: TObject);
+begin
+ Self.RTL := UniMainModule.RTL;
 end;
 
 procedure AppLog(CallBack: TUniDialogCallBackAnonProc);
