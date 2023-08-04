@@ -18,7 +18,8 @@ uses
   Sec_Log in 'Sources\Security\Sec_Log.pas' {SecLogin: TUniForm},
   Database_connection in 'Sources\Database\Database_connection.pas' {DataBaseConnectionGet: TUniForm},
   Item_list in 'Sources\Items\Item_list.pas' {ItemsList: TUniForm},
-  Pos_Invoice in 'Sources\Operation\Pos_Invoice.pas' {POSInvoice: TUniForm};
+  Pos_Invoice in 'Sources\Operation\Pos_Invoice.pas' {POSInvoice: TUniForm},
+  Items_Search in 'Sources\Items\Items_Search.pas' {ItemsSearch: TUniForm};
 
 {$R *.res}
 

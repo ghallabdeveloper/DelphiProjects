@@ -211,7 +211,7 @@ object SecLogin: TSecLogin
       Left = 128
       Top = 104
       Width = 305
-      Height = 41
+      Height = 33
       Hint = ''
       PasswordChar = '*'
       Text = ''
@@ -234,7 +234,7 @@ object SecLogin: TSecLogin
     Left = 128
     Top = 100
     Width = 305
-    Height = 45
+    Height = 35
     Hint = ''
     Text = ''
     TabOrder = 4

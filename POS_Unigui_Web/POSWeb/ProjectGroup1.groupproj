@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{144FEBA1-5B79-4659-868E-025442868583}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="POSWeb.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="POSWeb">
+        <MSBuild Projects="POSWeb.dproj"/>
+    </Target>
+    <Target Name="POSWeb:Clean">
+        <MSBuild Projects="POSWeb.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="POSWeb:Make">
+        <MSBuild Projects="POSWeb.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="POSWeb"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="POSWeb:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="POSWeb:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

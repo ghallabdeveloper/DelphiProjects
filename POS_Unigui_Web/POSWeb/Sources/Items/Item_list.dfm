@@ -117,7 +117,6 @@ object ItemsList: TItemsList
     TabOrder = 1
     Caption = ''
     Color = clTeal
-    ExplicitHeight = 297
     object UniPanel4: TUniPanel
       Left = 1
       Top = 1
@@ -128,7 +127,6 @@ object ItemsList: TItemsList
       TabOrder = 1
       Caption = ''
       Color = clTeal
-      ExplicitHeight = 295
       object UniDBEdit1: TUniDBEdit
         Left = 87
         Top = 18
@@ -5804,8 +5802,6 @@ object ItemsList: TItemsList
       Color = clWindow
       TabOrder = 2
       OnClick = btnbuttonclick
-      ExplicitLeft = 327
-      ExplicitTop = 4
     end
     object btnPrior: TUniSpeedButton
       Tag = 105
@@ -6100,6 +6096,8 @@ object ItemsList: TItemsList
       ParentColor = False
       Color = clWindow
       TabOrder = 6
+      ExplicitLeft = 77
+      ExplicitTop = -3
     end
     object btnRefresh: TUniSpeedButton
       Tag = 103
@@ -6519,7 +6517,7 @@ object ItemsList: TItemsList
     LangNames.Strings = (
       'English'
       'Arabic'
-      'Language N3')
+      '')
     Language = 'English'
     ExcludedProperties.Strings = (
       'Category'

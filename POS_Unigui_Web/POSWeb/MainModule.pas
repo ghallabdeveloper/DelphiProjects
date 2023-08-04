@@ -7,6 +7,7 @@ uses
   FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.VCLUI.Wait,
   Data.DB, FireDAC.Comp.Client, inifiles, FireDAC.Phys.MSSQL,
+  System.Variants,
   FireDAC.Phys.MSSQLDef, FireDAC.Phys.ODBCBase, FireDAC.Stan.Param,
   FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet, siComp;
 
@@ -19,6 +20,7 @@ type
   private
     function GetRTLStr(RemoteAddress, BrowserType, BrowserVersion,
       OSType: string): string;
+
 
     { Private declarations }
   public
@@ -42,6 +44,7 @@ type
       procedure SetRTLMain(RemoteAddress, BrowserType, BrowserVersion,
   OSType: string);
    procedure SaveRTL(const Value: Boolean);
+       function GetNextId(tablename, FieldName, cri: string): variant;
   end;
 
 function UniMainModule: TUniMainModule;
@@ -300,6 +303,25 @@ begin
       Exit;
     End;
   end;
+end;
+function  TUniMainModule.GetNextId(tablename: string; FieldName:string; cri:string):variant;
+var
+  vrx : Variant;
+begin
+  vrx :=  Dlookup(tablename,FieldName,cri);
+  if (VarType ( vrx)= varInteger) or  (VarType ( vrx) = varSmallint)or
+  (VarType ( vrx) = varSingle)Or (vrx = varCurrency)   or
+   (VarType ( vrx)= 17) then
+  begin
+       vrx := vrx+1;
+  end
+   else
+   begin
+          vrx :=   vrx+'1';
+  end ;
+  Result  := vrx;
+
+
 end;
 {$ENDREGION}
 

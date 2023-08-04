@@ -120,7 +120,7 @@ end;
 
 procedure TMainForm.btnPOSInvoiceClick(Sender: TObject);
 begin
-POSInvoice.show();
+POSInvoiceView();
 end;
 
 initialization
