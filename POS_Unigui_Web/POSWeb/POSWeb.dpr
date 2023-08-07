@@ -19,7 +19,8 @@ uses
   Database_connection in 'Sources\Database\Database_connection.pas' {DataBaseConnectionGet: TUniForm},
   Item_list in 'Sources\Items\Item_list.pas' {ItemsList: TUniForm},
   Pos_Invoice in 'Sources\Operation\Pos_Invoice.pas' {POSInvoice: TUniForm},
-  Items_Search in 'Sources\Items\Items_Search.pas' {ItemsSearch: TUniForm};
+  Items_Search in 'Sources\Items\Items_Search.pas' {ItemsSearch: TUniForm},
+  Export_Rep in 'Sources\Fastreport\Export_Rep.pas' {ExportRep: TUniForm};
 
 {$R *.res}
 

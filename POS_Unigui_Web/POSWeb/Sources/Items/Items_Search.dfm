@@ -18,7 +18,6 @@ object ItemsSearch: TItemsSearch
     Align = alTop
     TabOrder = 0
     Caption = ''
-    ExplicitTop = 0
     object edtSerearch: TUniEdit
       Left = 1
       Top = 1
@@ -29,10 +28,6 @@ object ItemsSearch: TItemsSearch
       Align = alClient
       TabOrder = 1
       OnChange = edtSerearchChange
-      ExplicitLeft = 160
-      ExplicitTop = 8
-      ExplicitWidth = 121
-      ExplicitHeight = 22
     end
     object btnGoto: TUniSpeedButton
       Tag = 102
@@ -107,9 +102,6 @@ object ItemsSearch: TItemsSearch
       Color = clWindow
       TabOrder = 2
       OnClick = btnGotoClick
-      ExplicitLeft = 77
-      ExplicitTop = -3
-      ExplicitHeight = 48
     end
   end
   object UniPanel2: TUniPanel
@@ -121,7 +113,6 @@ object ItemsSearch: TItemsSearch
     Align = alBottom
     TabOrder = 1
     Caption = ''
-    ExplicitTop = 8
     object btn_Cancel: TUniSpeedButton
       Left = 195
       Top = 1
@@ -191,8 +182,6 @@ object ItemsSearch: TItemsSearch
       Color = clGradientActiveCaption
       TabOrder = 1
       OnClick = btn_CancelClick
-      ExplicitLeft = 412
-      ExplicitHeight = 56
     end
     object btn_OK: TUniSpeedButton
       Left = 292
@@ -263,8 +252,6 @@ object ItemsSearch: TItemsSearch
       Color = clGradientActiveCaption
       TabOrder = 2
       OnClick = btn_OKClick
-      ExplicitLeft = 509
-      ExplicitHeight = 56
     end
   end
   object UniPanel3: TUniPanel
@@ -276,8 +263,6 @@ object ItemsSearch: TItemsSearch
     Align = alClient
     TabOrder = 2
     Caption = ''
-    ExplicitTop = 8
-    ExplicitHeight = 57
   end
   object UniDBGrid1: TUniDBGrid
     Left = 0
@@ -346,7 +331,7 @@ object ItemsSearch: TItemsSearch
     LangNames.Strings = (
       'English'
       'Arabic'
-      'Language N3')
+      '')
     Language = 'English'
     ExcludedProperties.Strings = (
       'Category'
@@ -469,8 +454,33 @@ object ItemsSearch: TItemsSearch
       0D000A00}
   end
   object FDQSearch: TFDQuery
+    Connection = UniMainModule.DBConn
+    SQL.Strings = (
+      'select * from item_list')
     Left = 200
     Top = 144
+    object FDQSearchName: TStringField
+      FieldName = 'Name'
+      Origin = 'Name'
+      Size = 200
+    end
+    object FDQSearchPrice: TCurrencyField
+      FieldName = 'Price'
+      Origin = 'Price'
+      DisplayFormat = '#.##'
+      currency = False
+    end
+    object FDQSearchType: TStringField
+      FieldName = 'Type'
+      Origin = 'Type'
+      Size = 50
+    end
+    object FDQSearchitem_Id: TSmallintField
+      FieldName = 'item_Id'
+      Origin = 'item_Id'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
   end
   object DataSource1: TDataSource
     DataSet = FDQSearch

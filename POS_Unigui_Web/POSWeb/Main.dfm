@@ -1,10 +1,11 @@
 object MainForm: TMainForm
   Left = 0
   Top = 0
-  ClientHeight = 428
-  ClientWidth = 708
+  ClientHeight = 455
+  ClientWidth = 716
   Caption = 'POS Web'
   OnShow = UniFormShow
+  BorderStyle = bsNone
   WindowState = wsMaximized
   OldCreateOrder = False
   BorderIcons = []
@@ -16,12 +17,13 @@ object MainForm: TMainForm
   object UniPanel1: TUniPanel
     Left = 0
     Top = 0
-    Width = 708
+    Width = 716
     Height = 49
     Hint = ''
     Align = alTop
     TabOrder = 0
     Caption = ''
+    ExplicitWidth = 708
     object btnLogin: TUniSpeedButton
       Left = 1
       Top = 1
@@ -74,7 +76,7 @@ object MainForm: TMainForm
       end
     end
     object UniImage1: TUniImage
-      Left = 573
+      Left = 581
       Top = 1
       Width = 59
       Height = 47
@@ -5509,9 +5511,10 @@ object MainForm: TMainForm
         56565656565656565656D617D7D7BEF6FF03283C17D3715AF87A000000004945
         4E44AE426082}
       Align = alRight
+      ExplicitLeft = 573
     end
     object btnLanguage: TUniSpeedButton
-      Left = 493
+      Left = 501
       Top = 1
       Width = 80
       Height = 47
@@ -5522,9 +5525,10 @@ object MainForm: TMainForm
       Color = clWhite
       TabOrder = 4
       OnClick = btnLanguageClick
+      ExplicitLeft = 493
     end
     object btnMainMenu: TUniSpeedButton
-      Left = 632
+      Left = 640
       Top = 1
       Width = 75
       Height = 47
@@ -5989,18 +5993,21 @@ object MainForm: TMainForm
       Color = clWindow
       TabOrder = 5
       OnClick = btnMainMenuClick
+      ExplicitLeft = 632
     end
   end
   object pnlMenu: TUniPanel
-    Left = 493
+    Left = 501
     Top = 49
     Width = 215
-    Height = 379
+    Height = 406
     Hint = ''
     Visible = False
     Align = alRight
     TabOrder = 1
     Caption = ''
+    ExplicitLeft = 493
+    ExplicitHeight = 379
     object btnPOSInvoice: TUniSpeedButton
       Left = 1
       Top = 65

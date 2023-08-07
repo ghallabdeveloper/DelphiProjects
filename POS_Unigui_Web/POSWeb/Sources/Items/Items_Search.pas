@@ -27,6 +27,10 @@ type
     FDQSearch: TFDQuery;
     DataSource1: TDataSource;
     btnGoto: TUniSpeedButton;
+    FDQSearchName: TStringField;
+    FDQSearchPrice: TCurrencyField;
+    FDQSearchType: TStringField;
+    FDQSearchitem_Id: TSmallintField;
     procedure btn_OKClick(Sender: TObject);
     procedure btn_CancelClick(Sender: TObject);
     procedure UniFormCreate(Sender: TObject);
@@ -90,6 +94,7 @@ end;
     else
     cri := ' Where Name like ''' + '%' + trim( edtSerearch.Text) +'%'  + ''' ';
    UniMainModule.Settable('select * from item_list ' +cri, FDQSearch);
+//   UniMainModule.  setCurrencyFields('price',FDQSearch);
   end;
 procedure TItemsSearch.btnGotoClick(Sender: TObject);
 begin

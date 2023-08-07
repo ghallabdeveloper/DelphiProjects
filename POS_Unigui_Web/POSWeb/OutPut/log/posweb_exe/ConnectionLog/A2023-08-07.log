@@ -1,0 +1,3 @@
+POSWeb.exe: 00001380: 22:38:58 [127.0.0.1]:Failed Sequence Recovery: SeqId: 25, Event: click
+POSWeb.exe: 00001380: 22:39:00 [127.0.0.1]:Sequence sent from cache:  SeqId: 25
+POSWeb.exe: 00001380: 22:39:00 [127.0.0.1]:Processed: Id: 25, Evt: click, [3rw6bwDxCJ10D173E01]

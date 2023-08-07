@@ -22,6 +22,7 @@ type
       OSType: string): string;
 
 
+
     { Private declarations }
   public
     mUserName: string;
@@ -45,6 +46,7 @@ type
   OSType: string);
    procedure SaveRTL(const Value: Boolean);
        function GetNextId(tablename, FieldName, cri: string): variant;
+           procedure setCurrencyFields(FieldName: string; var fquery: TFDQuery);
   end;
 
 function UniMainModule: TUniMainModule;
@@ -323,6 +325,14 @@ begin
 
 
 end;
+procedure TUniMainModule.setCurrencyFields(FieldName:string; var fquery: TFDQuery);
+Begin
+
+    ( fquery.FieldByName(FieldName) as TCurrencyField).currency := False
+
+
+
+End;
 {$ENDREGION}
 
 initialization

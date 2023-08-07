@@ -19,7 +19,6 @@ object POSInvoice: TPOSInvoice
     TabOrder = 0
     Caption = ''
     Color = clBlue
-    ExplicitWidth = 607
     object UniLabel1: TUniLabel
       Left = 81
       Top = 1
@@ -34,8 +33,6 @@ object POSInvoice: TPOSInvoice
       Font.Color = clWhite
       Font.Height = -20
       TabOrder = 1
-      ExplicitLeft = 1
-      ExplicitWidth = 605
     end
     object btnRefresh: TUniSpeedButton
       Tag = 103
@@ -182,7 +179,6 @@ object POSInvoice: TPOSInvoice
       Color = clWindow
       TabOrder = 3
       OnClick = btnGotoClick
-      ExplicitLeft = 592
     end
     object btnClose: TUniSpeedButton
       Tag = 105
@@ -257,8 +253,6 @@ object POSInvoice: TPOSInvoice
       Color = clWindow
       TabOrder = 4
       OnClick = btnCloseClick
-      ExplicitLeft = 9
-      ExplicitTop = 2
     end
   end
   object UniPanel3: TUniPanel
@@ -271,10 +265,6 @@ object POSInvoice: TPOSInvoice
     TabOrder = 1
     Caption = ''
     Color = clTeal
-    ExplicitLeft = 72
-    ExplicitTop = 252
-    ExplicitWidth = 721
-    ExplicitHeight = 195
     object UniDBGrid1: TUniDBGrid
       Left = 1
       Top = 57
@@ -326,9 +316,6 @@ object POSInvoice: TPOSInvoice
       TabOrder = 2
       Caption = ''
       Color = clWhite
-      ExplicitLeft = 2
-      ExplicitTop = 9
-      ExplicitWidth = 719
       object btnSave2: TUniSpeedButton
         Tag = 106
         Left = 713
@@ -402,7 +389,6 @@ object POSInvoice: TPOSInvoice
         Color = clWindow
         TabOrder = 1
         OnClick = btnButton2Click
-        ExplicitLeft = 509
       end
       object btnCancel2: TUniSpeedButton
         Tag = 107
@@ -477,7 +463,6 @@ object POSInvoice: TPOSInvoice
         Color = clWindow
         TabOrder = 2
         OnClick = btnButton2Click
-        ExplicitLeft = 439
       end
       object btnAdd2: TUniSpeedButton
         Tag = 101
@@ -552,7 +537,6 @@ object POSInvoice: TPOSInvoice
         Color = clWindow
         TabOrder = 3
         OnClick = btnButton2Click
-        ExplicitLeft = 369
       end
       object btnDel2: TUniSpeedButton
         Tag = 102
@@ -627,7 +611,6 @@ object POSInvoice: TPOSInvoice
         Color = clWindow
         TabOrder = 4
         OnClick = btnButton2Click
-        ExplicitLeft = 290
       end
     end
   end
@@ -640,9 +623,6 @@ object POSInvoice: TPOSInvoice
     Align = alTop
     TabOrder = 2
     Caption = ' '
-    ExplicitLeft = 8
-    ExplicitTop = 218
-    ExplicitWidth = 721
     object UniImage1: TUniImage
       Left = 684
       Top = 1
@@ -6079,9 +6059,6 @@ object POSInvoice: TPOSInvoice
         56565656565656565656D617D7D7BEF6FF03283C17D3715AF87A000000004945
         4E44AE426082}
       Align = alRight
-      ExplicitLeft = 553
-      ExplicitTop = 0
-      ExplicitHeight = 128
     end
     object UniPanel5: TUniPanel
       Left = 1
@@ -6132,8 +6109,8 @@ object POSInvoice: TPOSInvoice
         TabOrder = 2
       end
       object UniLabel4: TUniLabel
-        Left = 69
-        Top = 74
+        Left = 64
+        Top = 105
         Width = 16
         Height = 13
         Hint = ''
@@ -6141,18 +6118,18 @@ object POSInvoice: TPOSInvoice
         TabOrder = 3
       end
       object UniDBEdit3: TUniDBEdit
-        Left = 110
-        Top = 74
+        Left = 105
+        Top = 105
         Width = 200
         Height = 22
         Hint = ''
-        DataField = 'Price'
+        DataField = 'vat'
         DataSource = dsInvoise
         TabOrder = 4
       end
       object UniLabel5: TUniLabel
-        Left = 44
-        Top = 102
+        Left = 41
+        Top = 74
         Width = 41
         Height = 13
         Hint = ''
@@ -6160,8 +6137,8 @@ object POSInvoice: TPOSInvoice
         TabOrder = 5
       end
       object UniDBEdit4: TUniDBEdit
-        Left = 110
-        Top = 102
+        Left = 107
+        Top = 74
         Width = 200
         Height = 22
         Hint = ''
@@ -6242,8 +6219,6 @@ object POSInvoice: TPOSInvoice
     TabOrder = 3
     Caption = ''
     Color = clWhite
-    ExplicitTop = 81
-    ExplicitWidth = 721
     object btnLast: TUniSpeedButton
       Tag = 105
       Left = 277
@@ -6317,7 +6292,6 @@ object POSInvoice: TPOSInvoice
       Color = clWindow
       TabOrder = 1
       OnClick = btnButtonClick
-      ExplicitLeft = 185
     end
     object btnPrior: TUniSpeedButton
       Tag = 105
@@ -6392,7 +6366,6 @@ object POSInvoice: TPOSInvoice
       Color = clWindow
       TabOrder = 2
       OnClick = btnButtonClick
-      ExplicitLeft = 234
     end
     object btnNext: TUniSpeedButton
       Tag = 105
@@ -6467,8 +6440,6 @@ object POSInvoice: TPOSInvoice
       Color = clWindow
       TabOrder = 3
       OnClick = btnButtonClick
-      ExplicitLeft = 382
-      ExplicitTop = -3
     end
     object btnFirst: TUniSpeedButton
       Tag = 105
@@ -6543,7 +6514,6 @@ object POSInvoice: TPOSInvoice
       Color = clWindow
       TabOrder = 4
       OnClick = btnButtonClick
-      ExplicitLeft = 332
     end
     object btnPrint: TUniSpeedButton
       Tag = 104
@@ -6617,8 +6587,7 @@ object POSInvoice: TPOSInvoice
       ParentColor = False
       Color = clWindow
       TabOrder = 5
-      OnClick = btnButtonClick
-      ExplicitLeft = 105
+      OnClick = btnPrintClick
     end
     object btnReject: TUniSpeedButton
       Tag = 106
@@ -6693,7 +6662,6 @@ object POSInvoice: TPOSInvoice
       Color = clWindow
       TabOrder = 6
       OnClick = btnButtonClick
-      ExplicitLeft = 19
     end
     object btnCancel: TUniSpeedButton
       Tag = 107
@@ -6768,7 +6736,6 @@ object POSInvoice: TPOSInvoice
       Color = clWindow
       TabOrder = 7
       OnClick = btnButtonClick
-      ExplicitLeft = 553
     end
     object btnAdd: TUniSpeedButton
       Tag = 101
@@ -6843,7 +6810,6 @@ object POSInvoice: TPOSInvoice
       Color = clWindow
       TabOrder = 8
       OnClick = btnButtonClick
-      ExplicitLeft = 483
     end
     object btnDel: TUniSpeedButton
       Tag = 102
@@ -6918,7 +6884,6 @@ object POSInvoice: TPOSInvoice
       Color = clWindow
       TabOrder = 9
       OnClick = btnButtonClick
-      ExplicitLeft = 404
     end
     object btnSave: TUniSpeedButton
       Tag = 106
@@ -6993,40 +6958,116 @@ object POSInvoice: TPOSInvoice
       Color = clWindow
       TabOrder = 10
       OnClick = btnButtonClick
-      ExplicitLeft = 623
     end
   end
   object FDQInvoice: TFDQuery
     AfterClose = FDQInvoiceAfterClose
-    AfterInsert = FDQInvoiceAfterInsert
     AfterEdit = FDQInvoiceAfterEdit
+    BeforePost = FDQInvoiceBeforePost
     AfterPost = FDQInvoiceAfterPost
     AfterCancel = FDQInvoiceAfterCancel
     AfterDelete = FDQInvoiceAfterDelete
     AfterScroll = FDQInvoiceAfterScroll
+    OnNewRecord = FDQInvoiceNewRecord
+    Connection = UniMainModule.DBConn
+    SQL.Strings = (
+      'select * from Inoivce')
     Left = 240
-    Top = 281
+    Top = 265
+    object FDQInvoiceinvoiceId: TCurrencyField
+      FieldName = 'invoiceId'
+      Origin = 'invoiceId'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object FDQInvoiceTotal_Price: TCurrencyField
+      FieldName = 'Total_Price'
+      Origin = 'Total_Price'
+      currency = False
+    end
+    object FDQInvoiceVat: TCurrencyField
+      FieldName = 'Vat'
+      Origin = 'Vat'
+      currency = False
+    end
+    object FDQInvoiceDiscount: TCurrencyField
+      FieldName = 'Discount'
+      Origin = 'Discount'
+      currency = False
+    end
+    object FDQInvoiceNetCost: TCurrencyField
+      FieldName = 'NetCost'
+      Origin = 'NetCost'
+      currency = False
+    end
+    object FDQInvoiceamount: TCurrencyField
+      FieldName = 'amount'
+      Origin = 'amount'
+    end
+    object FDQInvoiceRemainder: TCurrencyField
+      FieldName = 'Remainder'
+      Origin = 'Remainder'
+      currency = False
+    end
   end
   object FDQInvoice_Details: TFDQuery
     AfterClose = FDQInvoice_DetailsAfterClose
     AfterInsert = FDQInvoice_DetailsAfterInsert
+    BeforeEdit = FDQInvoice_DetailsBeforeEdit
     AfterEdit = FDQInvoice_DetailsAfterEdit
     AfterPost = FDQInvoice_DetailsAfterPost
     AfterCancel = FDQInvoice_DetailsAfterCancel
     AfterDelete = FDQInvoice_DetailsAfterDelete
     AfterScroll = FDQInvoice_DetailsAfterScroll
-    Left = 328
-    Top = 361
+    OnNewRecord = FDQInvoice_DetailsNewRecord
+    Connection = UniMainModule.DBConn
+    SQL.Strings = (
+      'select * from Invoice_Detials')
+    Left = 344
+    Top = 265
+    object FDQInvoice_DetailsinvoiceId: TCurrencyField
+      FieldName = 'invoiceId'
+      Origin = 'invoiceId'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object FDQInvoice_Detailsrow_Id: TSmallintField
+      FieldName = 'row_Id'
+      Origin = 'row_Id'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object FDQInvoice_DetailsName: TStringField
+      FieldName = 'Name'
+      Origin = 'Name'
+      Size = 200
+    end
+    object FDQInvoice_DetailsQty: TCurrencyField
+      FieldName = 'Qty'
+      Origin = 'Qty'
+      DisplayFormat = '#.##'
+      currency = False
+    end
+    object FDQInvoice_Detailsprice: TCurrencyField
+      FieldName = 'price'
+      Origin = 'price'
+      DisplayFormat = '#.##'
+      currency = False
+    end
+    object FDQInvoice_DetailsItemId: TSmallintField
+      FieldName = 'ItemId'
+      Origin = 'ItemId'
+    end
   end
   object dsInvoise: TDataSource
     DataSet = FDQInvoice
-    Left = 472
+    Left = 496
     Top = 281
   end
   object dsInvoice_Details: TDataSource
     DataSet = FDQInvoice_Details
-    Left = 472
-    Top = 369
+    Left = 440
+    Top = 273
   end
   object siLang1: TsiLang
     Version = '7.6.0.1'
@@ -7039,7 +7080,7 @@ object POSInvoice: TPOSInvoice
     LangNames.Strings = (
       'English'
       'Arabic'
-      'Language N3')
+      '')
     Language = 'English'
     ExcludedProperties.Strings = (
       'Category'
@@ -7240,5 +7281,677 @@ object POSInvoice: TPOSInvoice
       6C0065002E00430061007000740069006F006E00010070007200690063006500
       010027064406330639063106010001000D000A00730074004300680061007200
       53006500740073005F0055006E00690063006F00640065000D000A00}
+  end
+  object rep: TfrxReport
+    Version = '6.9.3'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick, pbCopy, pbSelection]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45145.909484097200000000
+    ReportOptions.LastChange = 45145.948099259260000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 568
+    Top = 337
+    Datasets = <
+      item
+        DataSet = frxDB1
+        DataSetName = 'db1'
+      end
+      item
+        DataSet = frxDB2
+        DataSetName = 'db2'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      Frame.Typ = []
+      MirrorMode = []
+      object ReportTitle1: TfrxReportTitle
+        FillType = ftBrush
+        Frame.Typ = []
+        Height = 68.031540000000000000
+        Top = 18.897650000000000000
+        Width = 718.110700000000000000
+        object Memo1: TfrxMemoView
+          AllowVectorExport = True
+          Left = 257.008040000000000000
+          Top = 11.338590000000000000
+          Width = 162.519790000000000000
+          Height = 41.574830000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -24
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Invoice')
+          ParentFont = False
+        end
+        object Memo2: TfrxMemoView
+          AllowVectorExport = True
+          Left = 7.559060000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Color = clAqua
+          Frame.Typ = []
+          Fill.BackColor = clYellow
+          HAlign = haCenter
+          Memo.UTF8W = (
+            #1585#1602#1605' '#1575#1604#1601#1575#1578#1608#1585#1577)
+          ParentFont = False
+        end
+        object Memo3: TfrxMemoView
+          AllowVectorExport = True
+          Left = 109.606370000000000000
+          Top = 3.000000000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DataField = 'invoiceId'
+          DataSet = frxDB1
+          DataSetName = 'db1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[db1."invoiceId"]')
+          ParentFont = False
+        end
+      end
+      object MasterData1: TfrxMasterData
+        FillType = ftBrush
+        Frame.Typ = []
+        Height = 22.677180000000000000
+        Top = 147.401670000000000000
+        Width = 718.110700000000000000
+        DataSet = frxDB1
+        DataSetName = 'db1'
+        RowCount = 0
+      end
+      object GroupHeader1: TfrxGroupHeader
+        FillType = ftBrush
+        Frame.Typ = []
+        Height = 22.677180000000000000
+        Top = 192.756030000000000000
+        Width = 718.110700000000000000
+        Condition = 'db2."invoiceId"'
+        Stretched = True
+        object Memo16: TfrxMemoView
+          Align = baLeft
+          AllowVectorExport = True
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          StretchMode = smMaxHeight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Color = clAqua
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Fill.BackColor = clYellow
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'row id')
+          ParentFont = False
+        end
+        object Memo17: TfrxMemoView
+          Align = baLeft
+          AllowVectorExport = True
+          Left = 94.488250000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          StretchMode = smMaxHeight
+          DataSet = frxDB1
+          DataSetName = 'db1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Color = clAqua
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Fill.BackColor = clYellow
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'name')
+          ParentFont = False
+        end
+        object Memo18: TfrxMemoView
+          Align = baLeft
+          AllowVectorExport = True
+          Left = 188.976500000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          StretchMode = smMaxHeight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Color = clAqua
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Fill.BackColor = clYellow
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Qty')
+          ParentFont = False
+        end
+        object Memo19: TfrxMemoView
+          Align = baLeft
+          AllowVectorExport = True
+          Left = 283.464750000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          StretchMode = smMaxHeight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Color = clAqua
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Fill.BackColor = clYellow
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'price')
+          ParentFont = False
+        end
+        object Memo20: TfrxMemoView
+          Align = baLeft
+          AllowVectorExport = True
+          Left = 377.953000000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          StretchMode = smMaxHeight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Color = clAqua
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Fill.BackColor = clYellow
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'ItemId')
+          ParentFont = False
+        end
+      end
+      object MasterData2: TfrxMasterData
+        FillType = ftBrush
+        Frame.Typ = []
+        Height = 22.677180000000000000
+        Top = 238.110390000000000000
+        Width = 718.110700000000000000
+        DataSet = frxDB2
+        DataSetName = 'db2'
+        RowCount = 0
+        Stretched = True
+        object Memo23: TfrxMemoView
+          Align = baLeft
+          AllowVectorExport = True
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          StretchMode = smMaxHeight
+          DataField = 'row_Id'
+          DataSet = frxDB2
+          DataSetName = 'db2'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[db2."row_Id"]')
+          ParentFont = False
+        end
+        object Memo24: TfrxMemoView
+          Align = baLeft
+          AllowVectorExport = True
+          Left = 94.488250000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          StretchMode = smMaxHeight
+          DataField = 'Name'
+          DataSet = frxDB2
+          DataSetName = 'db2'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[db2."Name"]')
+          ParentFont = False
+        end
+        object Memo25: TfrxMemoView
+          Align = baLeft
+          AllowVectorExport = True
+          Left = 188.976500000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          StretchMode = smMaxHeight
+          DataField = 'Qty'
+          DataSet = frxDB2
+          DataSetName = 'db2'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[db2."Qty"]')
+          ParentFont = False
+        end
+        object Memo26: TfrxMemoView
+          Align = baLeft
+          AllowVectorExport = True
+          Left = 283.464750000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          StretchMode = smMaxHeight
+          DataField = 'price'
+          DataSet = frxDB2
+          DataSetName = 'db2'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[db2."price"]')
+          ParentFont = False
+        end
+        object Memo27: TfrxMemoView
+          Align = baLeft
+          AllowVectorExport = True
+          Left = 377.953000000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          StretchMode = smMaxHeight
+          DataSet = frxDB2
+          DataSetName = 'db2'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[db2."ItemId"]')
+          ParentFont = False
+        end
+      end
+      object GroupFooter1: TfrxGroupFooter
+        FillType = ftBrush
+        Frame.Typ = []
+        Height = 151.181200000000000000
+        Top = 283.464750000000000000
+        Width = 718.110700000000000000
+        object Memo4: TfrxMemoView
+          AllowVectorExport = True
+          Left = 3.779530000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DataSet = frxDB1
+          DataSetName = 'db1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Color = clAqua
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Fill.BackColor = clYellow
+          HAlign = haCenter
+          Memo.UTF8W = (
+            #1575#1580#1605#1575#1604' '#1575#1604#1587#1593#1585)
+          ParentFont = False
+        end
+        object Memo6: TfrxMemoView
+          AllowVectorExport = True
+          Left = 3.559060000000000000
+          Top = 23.677180000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Color = clAqua
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Fill.BackColor = clYellow
+          HAlign = haCenter
+          Memo.UTF8W = (
+            #1575#1604#1590#1585#1610#1576#1577)
+          ParentFont = False
+        end
+        object Memo7: TfrxMemoView
+          AllowVectorExport = True
+          Left = 4.559060000000000000
+          Top = 43.913420000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Color = clAqua
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Fill.BackColor = clYellow
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Discount')
+          ParentFont = False
+        end
+        object Memo10: TfrxMemoView
+          AllowVectorExport = True
+          Left = 3.779530000000000000
+          Top = 64.031540000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Color = clAqua
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Fill.BackColor = clYellow
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'NetCost')
+          ParentFont = False
+        end
+        object Memo11: TfrxMemoView
+          AllowVectorExport = True
+          Left = 3.779530000000000000
+          Top = 83.708720000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Color = clAqua
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Fill.BackColor = clYellow
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'amount')
+          ParentFont = False
+        end
+        object Memo14: TfrxMemoView
+          AllowVectorExport = True
+          Left = 3.779530000000000000
+          Top = 103.826840000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Color = clAqua
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Fill.BackColor = clYellow
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Remainder')
+          ParentFont = False
+        end
+        object Memo5: TfrxMemoView
+          AllowVectorExport = True
+          Left = 100.708720000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DataField = 'Total_Price'
+          DataSet = frxDB1
+          DataSetName = 'db1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[db1."Total_Price"]')
+          ParentFont = False
+        end
+        object Memo8: TfrxMemoView
+          AllowVectorExport = True
+          Left = 100.606370000000000000
+          Top = 25.236240000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DataField = 'Vat'
+          DataSet = frxDB1
+          DataSetName = 'db1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[db1."Vat"]')
+          ParentFont = False
+        end
+        object Memo9: TfrxMemoView
+          AllowVectorExport = True
+          Left = 101.047310000000000000
+          Top = 45.574830000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DataSet = frxDB1
+          DataSetName = 'db1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[db1."Discount"]')
+          ParentFont = False
+        end
+        object Memo12: TfrxMemoView
+          AllowVectorExport = True
+          Left = 101.267780000000000000
+          Top = 68.031540000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DataSet = frxDB1
+          DataSetName = 'db1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[db1."NetCost"]')
+          ParentFont = False
+        end
+        object Memo13: TfrxMemoView
+          AllowVectorExport = True
+          Left = 101.047310000000000000
+          Top = 86.929190000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DataSet = frxDB1
+          DataSetName = 'db1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[db1."amount"]')
+          ParentFont = False
+        end
+        object Memo15: TfrxMemoView
+          AllowVectorExport = True
+          Left = 101.826840000000000000
+          Top = 106.826840000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          DataSet = frxDB1
+          DataSetName = 'db1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[db1."Remainder"]')
+          ParentFont = False
+        end
+      end
+      object PageFooter1: TfrxPageFooter
+        FillType = ftBrush
+        Frame.Typ = []
+        Height = 23.779530000000000000
+        Top = 495.118430000000000000
+        Width = 718.110700000000000000
+        object Memo28: TfrxMemoView
+          AllowVectorExport = True
+          Left = 517.291280000000000000
+          Top = 1.424859999999970000
+          Width = 214.708720000000000000
+          Height = 20.000000000000000000
+          Hint = 'Memo8'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[DATE+ TIME]')
+          ParentFont = False
+        end
+        object Memo29: TfrxMemoView
+          AllowVectorExport = True
+          Left = 24.000000000000000000
+          Top = 1.424860000000000000
+          Width = 128.000000000000000000
+          Height = 20.000000000000000000
+          Hint = 'Memo9'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          Memo.UTF8W = (
+            'Page [PAGE#] From [TOTALPAGES#]')
+          ParentFont = False
+          Formats = <
+            item
+            end
+            item
+            end>
+        end
+        object Memo30: TfrxMemoView
+          AllowVectorExport = True
+          Left = 148.000000000000000000
+          Top = 1.424860000000000000
+          Width = 346.614100000000000000
+          Height = 20.000000000000000000
+          Hint = 'Memo17'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          Memo.UTF8W = (
+            '[_AppName]')
+          ParentFont = False
+        end
+      end
+    end
+  end
+  object frxDB1: TfrxDBDataset
+    UserName = 'db1'
+    CloseDataSource = False
+    DataSet = FDQInvoice
+    BCDToCurrency = False
+    Left = 528
+    Top = 393
+  end
+  object frxDB2: TfrxDBDataset
+    UserName = 'db2'
+    CloseDataSource = False
+    FieldAliases.Strings = (
+      'invoiceId=invoiceId'
+      'row_Id=row_Id'
+      'Name=Name'
+      'Qty=Qty'
+      'price=price'
+      'ItemId=ItemId')
+    DataSet = FDQInvoice_Details
+    BCDToCurrency = False
+    Left = 536
+    Top = 465
   end
 end
