@@ -13,19 +13,20 @@ type
   TSecLogin = class(TUniForm)
     UniPanel1: TUniPanel;
     UniPanel2: TUniPanel;
-    UniPanel3: TUniPanel;
     UniLabel1: TUniLabel;
     btn_OK: TUniSpeedButton;
     btn_Cancel: TUniSpeedButton;
-    UniLabel2: TUniLabel;
-    UniLabel3: TUniLabel;
-    edtUserName: TUniEdit;
-    edtUserPass: TUniEdit;
     UniImage1: TUniImage;
     siLang1: TsiLang;
+    UniImage2: TUniImage;
+    UniLabel2: TUniLabel;
+    edtUserPass: TUniEdit;
+    UniLabel3: TUniLabel;
+    edtUserName: TUniEdit;
     procedure btn_OKClick(Sender: TObject);
     procedure btn_CancelClick(Sender: TObject);
     procedure UniFormCreate(Sender: TObject);
+    procedure UniFormShow(Sender: TObject);
 
   private
     { Private declarations }
@@ -82,6 +83,15 @@ end;
 procedure TSecLogin.UniFormCreate(Sender: TObject);
 begin
  Self.RTL := UniMainModule.RTL;
+ edtUserName.Text :='';
+ edtUserPass.Text :='';
+
+end;
+
+procedure TSecLogin.UniFormShow(Sender: TObject);
+begin
+edtUserName.Text :='';
+ edtUserPass.Text :='';
 end;
 
 procedure AppLog(CallBack: TUniDialogCallBackAnonProc);

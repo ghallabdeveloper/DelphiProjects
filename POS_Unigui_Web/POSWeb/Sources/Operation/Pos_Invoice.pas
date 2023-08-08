@@ -10,7 +10,8 @@ uses
   uniDBGrid, uniEdit, uniDBEdit, FireDAC.Stan.Intf, FireDAC.Stan.Option,
   FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
   FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Data.DB,
-  FireDAC.Comp.DataSet, FireDAC.Comp.Client, siComp, frxClass, frxDBSet;
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, siComp, frxClass, frxDBSet,
+  frxDesgn, frxBarcode;
 
 const
   vatPercent = 15;
@@ -75,9 +76,12 @@ type
     FDQInvoice_DetailsQty: TCurrencyField;
     FDQInvoice_Detailsprice: TCurrencyField;
     FDQInvoice_DetailsItemId: TSmallintField;
-    rep: TfrxReport;
     frxDB1: TfrxDBDataset;
     frxDB2: TfrxDBDataset;
+    UniSpeedButton1: TUniSpeedButton;
+    frxDesigner1: TfrxDesigner;
+    frxBarCodeObject1: TfrxBarCodeObject;
+    frxReport1: TfrxReport;
     procedure btnButtonClick(Sender: TObject);
     procedure btnButton2Click(Sender: TObject);
     procedure FDQInvoiceAfterScroll(DataSet: TDataSet);
@@ -102,6 +106,7 @@ type
     procedure FDQInvoice_DetailsAfterInsert(DataSet: TDataSet);
     procedure FDQInvoiceBeforePost(DataSet: TDataSet);
     procedure btnPrintClick(Sender: TObject);
+    procedure UniSpeedButton1Click(Sender: TObject);
   private
       oldprice :Currency;
    oldqty :Currency;
@@ -196,8 +201,10 @@ begin
 end;
 
 procedure TPOSInvoice.btnPrintClick(Sender: TObject);
+var
+rep: TfrxReport;
 begin
-   //
+   rep:= TfrxReport.Create(self);//
    if Self.RTL  then
     rep.LoadFromFile(UniMainModule.pserverPath + 'files\reports\invoice_AR.fr3' )
     else
@@ -207,7 +214,12 @@ begin
     Variables['_AppName'] :='''' +'POS'+'''' ;
   end;
    if Rep.PrepareReport then
+   Begin
       ExportRep.ExportReports(rep);
+//      Rep.DesignReport();
+   End;
+      rep.Clear;
+      rep:= nil;
 end;
 
 procedure TPOSInvoice.btnRefreshClick(Sender: TObject);
@@ -468,5 +480,28 @@ begin
 
 end;
 
+
+procedure TPOSInvoice.UniSpeedButton1Click(Sender: TObject);
+
+var
+rep: TfrxReport;
+begin
+   rep:= TfrxReport.Create(self);//
+   if Self.RTL  then
+    rep.LoadFromFile(UniMainModule.pserverPath + 'files\reports\invoice_AR.fr3' )
+    else
+        rep.LoadFromFile(UniMainModule.pserverPath + 'files\reports\invoice.fr3' );
+  with    rep.Variables do
+  begin
+    Variables['_AppName'] :='''' +'POS'+'''' ;
+  end;
+   if Rep.PrepareReport then
+   Begin
+      //ExportRep.ExportReports(rep);
+      Rep.DesignReport();
+   End;
+      //rep.Clear;
+      //rep:= nil;
+end;
 
 end.
