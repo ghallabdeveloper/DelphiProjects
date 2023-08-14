@@ -1,0 +1,46 @@
+POSWeb.exe: 00000D58: 22:31:40 []:>--------------------------------------------------------------<
+POSWeb.exe: 00000D58: 22:31:40 [TUniServerModule]:Server First Init.
+POSWeb.exe: 00000D58: 22:31:40 [TUniServerModule]:Debug Mode = ON
+POSWeb.exe: 00000D58: 22:31:40 [TUniServerModule]:Global Cache Folder Erased. <1> Files deleted.
+POSWeb.exe: 00000D58: 22:31:40 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+POSWeb.exe: 00000D58: 22:31:40 [TUniServerModule]:HTTP Server Started on Port: 8077
+POSWeb.exe: 00000D0C: 22:32:39 []:>--------------------------------------------------------------<
+POSWeb.exe: 00000D0C: 22:32:39 [TUniServerModule]:Server First Init.
+POSWeb.exe: 00000D0C: 22:32:39 [TUniServerModule]:Debug Mode = ON
+POSWeb.exe: 00000D0C: 22:32:39 [TUniServerModule]:Global Cache Folder Erased. <45> Files deleted.
+POSWeb.exe: 00000D0C: 22:32:40 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+POSWeb.exe: 00000D0C: 22:32:40 [TUniServerModule]:HTTP Server Started on Port: 8077
+POSWeb.exe: 00001350: 22:32:40 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $007DD21B
+POSWeb.exe: 000005C0: 22:33:50 []:>--------------------------------------------------------------<
+POSWeb.exe: 000005C0: 22:33:50 [TUniServerModule]:Server First Init.
+POSWeb.exe: 000005C0: 22:33:50 [TUniServerModule]:Debug Mode = ON
+POSWeb.exe: 000005C0: 22:33:50 [TUniServerModule]:Global Cache Folder Erased. <47> Files deleted.
+POSWeb.exe: 000005C0: 22:33:50 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+POSWeb.exe: 000005C0: 22:33:50 [TUniServerModule]:HTTP Server Started on Port: 8077
+POSWeb.exe: 00000110: 22:33:59 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $007DD21B
+POSWeb.exe: 000010A8: 22:35:02 []:>--------------------------------------------------------------<
+POSWeb.exe: 000010A8: 22:35:02 [TUniServerModule]:Server First Init.
+POSWeb.exe: 000010A8: 22:35:02 [TUniServerModule]:Debug Mode = ON
+POSWeb.exe: 000010A8: 22:35:02 [TUniServerModule]:Global Cache Folder Erased. <45> Files deleted.
+POSWeb.exe: 000010A8: 22:35:02 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+POSWeb.exe: 000010A8: 22:35:02 [TUniServerModule]:HTTP Server Started on Port: 8077
+POSWeb.exe: 00001258: 22:35:02 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $007DD21B
+POSWeb.exe: 000007F4: 22:37:55 []:>--------------------------------------------------------------<
+POSWeb.exe: 000007F4: 22:37:55 [TUniServerModule]:Server First Init.
+POSWeb.exe: 000007F4: 22:37:55 [TUniServerModule]:Debug Mode = ON
+POSWeb.exe: 000007F4: 22:37:55 [TUniServerModule]:Global Cache Folder Erased. <45> Files deleted.
+POSWeb.exe: 000007F4: 22:37:55 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+POSWeb.exe: 000007F4: 22:37:55 [TUniServerModule]:HTTP Server Started on Port: 8077
+POSWeb.exe: 00000944: 22:37:56 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $007DD21B
+POSWeb.exe: 00000C04: 22:40:40 []:>--------------------------------------------------------------<
+POSWeb.exe: 00000C04: 22:40:40 [TUniServerModule]:Server First Init.
+POSWeb.exe: 00000C04: 22:40:40 [TUniServerModule]:Debug Mode = ON
+POSWeb.exe: 00000C04: 22:40:40 [TUniServerModule]:Global Cache Folder Erased. <19> Files deleted.
+POSWeb.exe: 00000C04: 22:40:40 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+POSWeb.exe: 00000C04: 22:40:40 [TUniServerModule]:HTTP Server Started on Port: 8077
+POSWeb.exe: 00000BB0: 22:45:21 []:>--------------------------------------------------------------<
+POSWeb.exe: 00000BB0: 22:45:21 [TUniServerModule]:Server First Init.
+POSWeb.exe: 00000BB0: 22:45:21 [TUniServerModule]:Global Cache Folder Erased. <48> Files deleted.
+POSWeb.exe: 00000BB0: 22:45:21 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+POSWeb.exe: 00000BB0: 22:45:21 [TUniServerModule]:HTTP Server Started on Port: 8077
+POSWeb.exe: 00000D64: 22:45:28 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $007DD21B

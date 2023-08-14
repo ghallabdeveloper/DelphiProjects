@@ -11,7 +11,6 @@ object UniMainModule: TUniMainModule
       'User_Name=sa'
       'Password=123'
       'DriverID=MSSQL')
-    Connected = True
     LoginPrompt = False
     Left = 136
     Top = 64

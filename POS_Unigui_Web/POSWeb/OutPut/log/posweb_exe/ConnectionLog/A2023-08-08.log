@@ -1,0 +1,27 @@
+POSWeb.exe: 000011A4: 21:09:15 [127.0.0.1]:Failed Sequence Recovery: SeqId: 25, Event: click
+POSWeb.exe: 00000598: 21:09:50 [127.0.0.1]:Failed Sequence Recovery: SeqId: 25, Event: click
+POSWeb.exe: 000007E4: 21:10:21 [127.0.0.1]:Failed Sequence Recovery: SeqId: 25, Event: click
+POSWeb.exe: 00001004: 21:10:51 [127.0.0.1]:Failed Sequence Recovery: SeqId: 25, Event: click
+POSWeb.exe: 00000598: 21:18:52 [127.0.0.1]:Sequence sent from cache:  SeqId: 25
+POSWeb.exe: 00000598: 21:18:52 [127.0.0.1]:Processed: Id: 25, Evt: click, [hjgrZfIkX210D18AC5C]
+POSWeb.exe: 00001004: 21:18:52 [127.0.0.1]:Sequence sent from cache:  SeqId: 25
+POSWeb.exe: 00001004: 21:18:52 [127.0.0.1]:Processed: Id: 25, Evt: click, [hjgrZfIkX210D18AC5C]
+POSWeb.exe: 000007E4: 21:18:52 [127.0.0.1]:Sequence sent from cache:  SeqId: 25
+POSWeb.exe: 000007E4: 21:18:52 [127.0.0.1]:Processed: Id: 25, Evt: click, [hjgrZfIkX210D18AC5C]
+POSWeb.exe: 000011A4: 21:18:52 [127.0.0.1]:Sequence sent from cache:  SeqId: 25
+POSWeb.exe: 000011A4: 21:18:52 [127.0.0.1]:Processed: Id: 25, Evt: click, [hjgrZfIkX210D18AC5C]
+POSWeb.exe: 00000460: 21:18:54 [127.0.0.1]:Failed Sequence Recovery: SeqId: 25, Event: click
+POSWeb.exe: 00000460: 21:18:54 [127.0.0.1]:Sequence sent from cache:  SeqId: 25
+POSWeb.exe: 00000460: 21:18:54 [127.0.0.1]:Processed: Id: 25, Evt: click, [hjgrZfIkX210D18AC5C]
+POSWeb.exe: 00000F18: 21:21:59 [127.0.0.1]:Failed Sequence Recovery: SeqId: 25, Event: click
+POSWeb.exe: 00000628: 21:22:34 [127.0.0.1]:Failed Sequence Recovery: SeqId: 25, Event: click
+POSWeb.exe: 0000090C: 21:23:04 [127.0.0.1]:Failed Sequence Recovery: SeqId: 25, Event: click
+POSWeb.exe: 00000C9C: 21:23:34 [127.0.0.1]:Failed Sequence Recovery: SeqId: 25, Event: click
+POSWeb.exe: 00000C9C: 21:30:58 [127.0.0.1]:Sequence sent from cache:  SeqId: 25
+POSWeb.exe: 00000C9C: 21:30:58 [127.0.0.1]:Processed: Id: 25, Evt: click, [GknftryP4R10D18AFCD]
+POSWeb.exe: 0000090C: 21:30:58 [127.0.0.1]:Sequence sent from cache:  SeqId: 25
+POSWeb.exe: 0000090C: 21:30:58 [127.0.0.1]:Processed: Id: 25, Evt: click, [GknftryP4R10D18AFCD]
+POSWeb.exe: 00000628: 21:30:58 [127.0.0.1]:Sequence sent from cache:  SeqId: 25
+POSWeb.exe: 00000628: 21:30:58 [127.0.0.1]:Processed: Id: 25, Evt: click, [GknftryP4R10D18AFCD]
+POSWeb.exe: 00000F18: 21:30:58 [127.0.0.1]:Sequence sent from cache:  SeqId: 25
+POSWeb.exe: 00000F18: 21:30:58 [127.0.0.1]:Processed: Id: 25, Evt: click, [GknftryP4R10D18AFCD]

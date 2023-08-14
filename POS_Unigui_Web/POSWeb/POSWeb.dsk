@@ -1,42 +1,56 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.dfm',0,1,1,1,1,0,0,,
-File_1=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas',0,1,1,1,1,0,0,,
-File_2=TSourceModule,'C:\Program Files (x86)\FastReport 6 VCL Enterprise\LIBD26\frxClass.pas',0,1,19875,1,19887,0,0,,
-File_3=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Rep\Tex_Rep_Visitor.pas',0,1,128,15,138,0,0,,
-File_4=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Reports\FrToolsData2.pas',0,1,69,1,69,0,0,,
-File_5=TSourceModule,'C:\MyWork\ERP\POSWeb\ServerModule.pas',0,1,7,18,1,0,0,,
-File_6=TSourceModule,'C:\Program Files (x86)\FastReport 6 VCL Enterprise\LIBD26\fs_iilparser.pas',0,1,1215,1,1227,0,0,,
-File_7=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Rep\Rep_Agrconcession.pas',0,1,1,1,1,0,0,,
-File_8=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Reports\UrlViewForm.pas',0,1,58,25,18,0,0,,
-File_9=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Reports\FrToolsData.pas',0,1,34,1,129,0,0,,
-File_10=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Reports\Rep1Form.pas',0,1,2,1,49,0,0,,
-File_11=TSourceModule,'C:\MyWork\ERP\POSWeb\Main.pas',0,1,98,13,103,0,0,,
-File_12=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Items\Items_Search.pas',0,1,87,3,99,0,0,,
-File_13=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\SOURCE\RTL\SYS\SysInit.pas',0,1,800,1,814,0,0,,
-File_14=TSourceModule,'C:\MyWork\Intime\IntimeWebDelphi\IntimeWeb(6.0.0)\Main.pas',0,1,627,38,635,0,0,,{1
+File_0=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCWrapper.pas',0,1,5823,1,5836,0,0,,
+File_1=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.pas',0,1,7217,1,7230,0,0,,
+File_2=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Common\Common_Classes.pas',0,1,1,11,20,0,0,,
+File_3=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Fastreport\Export_Rep.pas',0,1,74,1,72,0,0,,
+File_4=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Items\Items_Search.pas',0,1,39,1,59,0,0,,
+File_5=TSourceModule,'C:\MyWork\ERP\POSWeb\MainModule.pas',0,1,22,13,38,0,0,{{230,0},{347,11},{'db Operation '}},{1,168,1}
+File_6=TSourceModule,'C:\MyWork\Intime\IntimeWebDelphi\IntimeWeb(6.0.0)\Source\Setup\Setup_Options.pas',0,1,1,1,1,0,0,,
+File_7=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas',0,1,83,1,85,0,0,,
+File_8=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.dfm',0,1,1,1,1,0,0,,
+File_9=TSourceModule,'C:\Program Files (x86)\FastReport 6 VCL Enterprise\LIBD26\frxClass.pas',0,1,19875,1,19887,0,0,,
+File_10=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Rep\Tex_Rep_Visitor.pas',0,1,128,15,138,0,0,,
+File_11=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Reports\FrToolsData2.pas',0,1,69,1,69,0,0,,
+File_12=TSourceModule,'C:\MyWork\ERP\POSWeb\ServerModule.pas',0,1,7,18,1,0,0,,
+File_13=TSourceModule,'C:\Program Files (x86)\FastReport 6 VCL Enterprise\LIBD26\fs_iilparser.pas',0,1,1215,1,1227,0,0,,
 
 [Modules]
-Module0=C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas
-Module1=C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas
-Module2=C:\MyWork\ERP\POSWeb\Sources\Fastreport\Export_Rep.pas
-Count=3
+Module0=c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCBase.pas
+Module1=C:\MyWork\ERP\POSWeb\Sources\Common\Setting_Form.pas
+Module2=C:\MyWork\ERP\POSWeb\MainModule.pas
+Module3=C:\MyWork\ERP\POSWeb\Main.pas
+Module4=C:\MyWork\Intime\IntimeWebDelphi\IntimeWeb(6.0.0)\Source\Setup\General_Options.pas
+Module5=C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas
+Count=6
 EditWindowCount=1
 
-[C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas]
+[c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCBase.pas]
+ModuleType=TSourceModule
+
+[C:\MyWork\ERP\POSWeb\Sources\Common\Setting_Form.pas]
+ModuleType=TSourceModule
+
+[C:\MyWork\ERP\POSWeb\MainModule.pas]
+ModuleType=TSourceModule
+
+[C:\MyWork\ERP\POSWeb\Main.pas]
+ModuleType=TSourceModule
+
+[C:\MyWork\Intime\IntimeWebDelphi\IntimeWeb(6.0.0)\Source\Setup\General_Options.pas]
 ModuleType=TSourceModule
 
 [C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas]
 ModuleType=TSourceModule
 
-[C:\MyWork\ERP\POSWeb\Sources\Fastreport\Export_Rep.pas]
-ModuleType=TSourceModule
-
 [EditWindow0]
-ViewCount=3
-CurrentEditView=C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas
+ViewCount=6
+CurrentEditView=c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCBase.pas
 View0=0
 View1=1
 View2=2
+View3=3
+View4=4
+View5=5
 PercentageSizes=1
 Create=1
 Visible=1
@@ -44,24 +58,24 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=9815
-Height=8629
+Width=9800
+Height=8604
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=9815
-ClientHeight=8629
+ClientWidth=9800
+ClientHeight=8604
 DockedToMainForm=1
 BorlandEditorCodeExplorer=BorlandEditorCodeExplorer@EditWindow0
 TopPanelSize=0
 LeftPanelSize=1897
 LeftPanelClients=PropertyInspector,DockSite3
-LeftPanelData=0000080001010100000009000000446F636B5369746533650F0000000000000169070000000000000100000000921A00001100000050726F7065727479496E73706563746F72FFFFFFFF
+LeftPanelData=0000080001010100000009000000446F636B5369746533560F0000000000000169070000000000000100000000791A00001100000050726F7065727479496E73706563746F72FFFFFFFF
 RightPanelSize=2000
 RightPanelClients=DockSite2,DockSite4
-RightPanelData=00000800010100000000650F00000000000001D00700000000000001000000004B12000009000000446F636B53697465320100000000921A000009000000446F636B5369746534FFFFFFFF
+RightPanelData=00000800010100000000560F00000000000001D00700000000000001000000004B12000009000000446F636B53697465320100000000791A000009000000446F636B5369746534FFFFFFFF
 BottomPanelSize=1726
 BottomPanelClients=DockSite1,MessageView
-BottomPanelData=0000080001020100000009000000446F636B5369746531283F00000000000002BE060000000000000100000000283F00000F0000004D65737361676556696577466F726DFFFFFFFF
+BottomPanelData=0000080001020100000009000000446F636B53697465310E3F00000000000002BE0600000000000001000000000E3F00000F0000004D65737361676556696577466F726DFFFFFFFF
 BottomMiddlePanelSize=0
 BottomMiddlePanelClients=DockSite0,GraphDrawingModel
 BottomMiddelPanelData=0000080001020200000009000000446F636B536974653010000000477261706844726177696E6756696577981D00000000000002F106000000000000FFFFFFFF
@@ -79,25 +93,58 @@ EditViewName=C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas
 
 [View1]
 CustomEditViewType=TEditView
-Module=C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas
-CursorX=5
-CursorY=95
-TopLine=91
+Module=C:\MyWork\ERP\POSWeb\Main.pas
+CursorX=32
+CursorY=107
+TopLine=104
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=Borland.FormDesignerView
+EditViewName=C:\MyWork\ERP\POSWeb\Main.pas
 
 [View2]
 CustomEditViewType=TEditView
-Module=C:\MyWork\ERP\POSWeb\Sources\Fastreport\Export_Rep.pas
-CursorX=1
-CursorY=72
-TopLine=74
+Module=C:\MyWork\ERP\POSWeb\MainModule.pas
+CursorX=7
+CursorY=393
+TopLine=364
+LeftCol=1
+Elisions=
+Bookmarks={1,174,1}{2,90,1}
+EditViewName=C:\MyWork\ERP\POSWeb\MainModule.pas
+
+[View3]
+CustomEditViewType=TEditView
+Module=c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCBase.pas
+CursorX=55
+CursorY=2815
+TopLine=2813
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\MyWork\ERP\POSWeb\Sources\Fastreport\Export_Rep.pas
+EditViewName=c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCBase.pas
+
+[View4]
+CustomEditViewType=TEditView
+Module=C:\MyWork\ERP\POSWeb\Sources\Common\Setting_Form.pas
+CursorX=1
+CursorY=96
+TopLine=86
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=C:\MyWork\ERP\POSWeb\Sources\Common\Setting_Form.pas
+
+[View5]
+CustomEditViewType=TEditView
+Module=C:\MyWork\Intime\IntimeWebDelphi\IntimeWeb(6.0.0)\Source\Setup\General_Options.pas
+CursorX=44
+CursorY=369
+TopLine=354
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=C:\MyWork\Intime\IntimeWebDelphi\IntimeWeb(6.0.0)\Source\Setup\General_Options.pas
 
 [UndockedDesigner]
 Count=0
@@ -127,12 +174,18 @@ Dockable=1
 StayOnTop=0
 
 [Breakpoints]
-Count=5
+Count=11
 Breakpoint0='C:\MyWork\ERP\POSWeb\Sources\Database\Database_connection.pas',57,'',0,1,'',1,0,0,'',1,'','','',0,''
 Breakpoint1='C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas',338,'',0,1,'',1,0,0,'',1,'','','',0,''
 Breakpoint2='C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas',319,'',0,1,'',1,0,0,'',1,'','','',0,''
-Breakpoint3='C:\MyWork\ERP\POSWeb\MainModule.pas',331,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint3='C:\MyWork\ERP\POSWeb\MainModule.pas',350,'',0,1,'',1,0,0,'',1,'','','',0,''
 Breakpoint4='C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas',494,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint5='C:\MyWork\ERP\POSWeb\MainModule.pas',374,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint6='C:\MyWork\ERP\POSWeb\MainModule.pas',122,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint7='C:\MyWork\ERP\POSWeb\MainModule.pas',109,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint8='C:\MyWork\ERP\POSWeb\MainModule.pas',90,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint9='C:\MyWork\ERP\POSWeb\MainModule.pas',376,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint10='C:\MyWork\ERP\POSWeb\MainModule.pas',261,'',0,1,'',1,0,0,'',1,'','','',0,''
 
 [EmbarcaderoWin32Debugger_AddressBreakpoints]
 Count=0
@@ -153,7 +206,7 @@ MaxWidth=8929
 MaxHeight=8528
 ClientWidth=9969
 ClientHeight=9619
-BottomPanelSize=8629
+BottomPanelSize=8604
 BottomPanelClients=EditWindow0
 BottomPanelData=0000080000000000000000000000000000000000000000000000000100000000000000000C0000004564697457696E646F775F30FFFFFFFF
 
@@ -184,11 +237,11 @@ Docked=1
 State=0
 Left=0
 Top=24
-Width=9815
+Width=9800
 Height=1421
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=9815
+ClientWidth=9800
 ClientHeight=1421
 TBDockHeight=1421
 LRDockWidth=2773
@@ -204,11 +257,11 @@ State=0
 Left=0
 Top=0
 Width=2096
-Height=1815
+Height=1789
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2096
-ClientHeight=1815
+ClientHeight=1789
 TBDockHeight=7157
 LRDockWidth=1995
 Dockable=1
@@ -222,14 +275,14 @@ Docked=0
 State=0
 Left=0
 Top=0
-Width=1787
-Height=6117
+Width=2851
+Height=5647
 MaxLeft=-8
 MaxTop=-13
-ClientWidth=1726
-ClientHeight=5774
-TBDockHeight=6117
-LRDockWidth=1787
+ClientWidth=2789
+ClientHeight=5305
+TBDockHeight=5647
+LRDockWidth=2851
 Dockable=1
 StayOnTop=0
 
@@ -299,12 +352,12 @@ State=0
 Left=0
 Top=24
 Width=1988
-Height=6497
+Height=6472
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1988
-ClientHeight=6497
-TBDockHeight=8325
+ClientHeight=6472
+TBDockHeight=9010
 LRDockWidth=1988
 Dockable=1
 StayOnTop=0
@@ -312,8 +365,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=PasswordChar,CustomHint
-ExpandedItems=Anchors=0,ClientEvents=0,Constraints=0,Font=0,LayoutConfig=0,LiveBindings=0,Margins=0,Draggable=0,"LiveBindings Designer=0",ScreenMask=0,BorderIcons=0,InputMask=0,FieldLabelFont=0,LangDispatcher=0,Options=0
+SelectedItem=Name,CustomHint
+ExpandedItems=BorderIcons=0,ClientEvents=0,Constraints=0,Font=0,HorzScrollBar=0,LayoutAttribs=0,LayoutConfig=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,MonitoredKeys=0,NavigateKeys=0,ScreenMask=0,VertScrollBar=0,Anchors=0,Background=0,Draggable=0,LangDispatcher=0,ConnectedStoredUsage=0,FetchOptions=0,FormatOptions=0,Params=0,ResourceOptions=0,TxOptions=0,UpdateOptions=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -324,11 +377,11 @@ State=0
 Left=0
 Top=0
 Width=2096
-Height=5952
+Height=5926
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2096
-ClientHeight=5952
+ClientHeight=5926
 TBDockHeight=5964
 LRDockWidth=2512
 Dockable=1
@@ -340,7 +393,7 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-1015
+Left=-1013
 Top=159
 Width=277
 Height=368
@@ -529,11 +582,11 @@ State=0
 Left=0
 Top=0
 Width=2096
-Height=5952
+Height=5926
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2096
-ClientHeight=5952
+ClientHeight=5926
 TBDockHeight=4886
 LRDockWidth=7149
 Dockable=1
@@ -546,7 +599,7 @@ Visible=0
 Docked=1
 State=0
 Left=279
-Top=618
+Top=616
 Width=2858
 Height=3211
 MaxLeft=-1
@@ -593,11 +646,11 @@ State=0
 Left=0
 Top=0
 Width=1988
-Height=8325
+Height=9010
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1988
-ClientHeight=8325
+ClientHeight=9010
 TBDockHeight=3680
 LRDockWidth=1895
 Dockable=1
@@ -612,11 +665,11 @@ State=0
 Left=0
 Top=0
 Width=2096
-Height=5952
+Height=5926
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2096
-ClientHeight=5952
+ClientHeight=5926
 TBDockHeight=4886
 LRDockWidth=5308
 Dockable=1
@@ -708,7 +761,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=2096
 ClientHeight=4277
-TBDockHeight=8325
+TBDockHeight=9010
 LRDockWidth=2096
 Dockable=1
 StayOnTop=0
@@ -727,12 +780,12 @@ State=0
 Left=8
 Top=8
 Width=1988
-Height=8325
+Height=9010
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1988
-ClientHeight=8325
-TBDockHeight=8325
+ClientHeight=9010
+TBDockHeight=9010
 LRDockWidth=1988
 Dockable=1
 StayOnTop=0
@@ -751,12 +804,12 @@ State=0
 Left=0
 Top=393
 Width=2096
-Height=1815
+Height=1789
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2096
-ClientHeight=1815
-TBDockHeight=8325
+ClientHeight=1789
+TBDockHeight=9010
 LRDockWidth=2096
 Dockable=1
 StayOnTop=0

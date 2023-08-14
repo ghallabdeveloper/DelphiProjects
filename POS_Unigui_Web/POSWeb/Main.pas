@@ -23,6 +23,7 @@ type
     btnPOSInvoice: TUniSpeedButton;
     btnItemsList: TUniSpeedButton;
     siLang1: TsiLang;
+    btnSetting: TUniSpeedButton;
     procedure UniFormCreate(Sender: TObject);
     procedure ThemeComboBoxChange(Sender: TObject);
     procedure btnLoginClick(Sender: TObject);
@@ -31,6 +32,7 @@ type
     procedure btnItemsListClick(Sender: TObject);
     procedure btnPOSInvoiceClick(Sender: TObject);
     procedure btnLanguageClick(Sender: TObject);
+    procedure btnSettingClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -44,7 +46,7 @@ implementation
 {$R *.dfm}
 
 uses
-  uniGUIVars, MainModule, uniGUIApplication, ServerModule, Sec_Log, Database_connection, Item_list, Pos_Invoice;
+  uniGUIVars, MainModule, uniGUIApplication, ServerModule, Sec_Log, Database_connection, Item_list, Pos_Invoice, Setting_Form;
 
 function MainForm: TMainForm;
 begin
@@ -121,6 +123,11 @@ end;
 procedure TMainForm.btnPOSInvoiceClick(Sender: TObject);
 begin
 POSInvoiceView();
+end;
+
+procedure TMainForm.btnSettingClick(Sender: TObject);
+begin
+SettingFormView();
 end;
 
 initialization

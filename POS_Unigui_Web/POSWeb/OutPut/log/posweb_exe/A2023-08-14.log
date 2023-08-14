@@ -1,0 +1,26 @@
+POSWeb.exe: 000011D8: 19:37:32 []:>--------------------------------------------------------------<
+POSWeb.exe: 000011D8: 19:37:32 [TUniServerModule]:Server First Init.
+POSWeb.exe: 000011D8: 19:37:32 [TUniServerModule]:Debug Mode = ON
+POSWeb.exe: 000011D8: 19:37:32 [TUniServerModule]:Global Cache Folder Erased. <20> Files deleted.
+POSWeb.exe: 000011D8: 19:37:32 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+POSWeb.exe: 000011D8: 19:37:32 [TUniServerModule]:HTTP Server Started on Port: 8077
+POSWeb.exe: 00001158: 19:39:17 []:>--------------------------------------------------------------<
+POSWeb.exe: 00001158: 19:39:17 [TUniServerModule]:Server First Init.
+POSWeb.exe: 00001158: 19:39:17 [TUniServerModule]:Debug Mode = ON
+POSWeb.exe: 00001158: 19:39:17 [TUniServerModule]:Global Cache Folder Erased. <16> Files deleted.
+POSWeb.exe: 00001158: 19:39:17 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+POSWeb.exe: 00001158: 19:39:17 [TUniServerModule]:HTTP Server Started on Port: 8077
+POSWeb.exe: 00000FC8: 19:39:22 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $007F5D17
+POSWeb.exe: 00000F8C: 19:41:13 []:>--------------------------------------------------------------<
+POSWeb.exe: 00000F8C: 19:41:13 [TUniServerModule]:Server First Init.
+POSWeb.exe: 00000F8C: 19:41:13 [TUniServerModule]:Debug Mode = ON
+POSWeb.exe: 00000F8C: 19:41:13 [TUniServerModule]:Global Cache Folder Erased. <17> Files deleted.
+POSWeb.exe: 00000F8C: 19:41:13 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+POSWeb.exe: 00000F8C: 19:41:13 [TUniServerModule]:HTTP Server Started on Port: 8077
+POSWeb.exe: 00000F58: 19:41:13 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. : Addr: $007F5D17
+POSWeb.exe: 0000034C: 20:04:10 []:>--------------------------------------------------------------<
+POSWeb.exe: 0000034C: 20:04:10 [TUniServerModule]:Server First Init.
+POSWeb.exe: 0000034C: 20:04:10 [TUniServerModule]:Debug Mode = ON
+POSWeb.exe: 0000034C: 20:04:10 [TUniServerModule]:Global Cache Folder Erased. <2> Files deleted.
+POSWeb.exe: 0000034C: 20:04:10 [TUniServerModule]:Starting HTTP Server on Port: 8077...
+POSWeb.exe: 0000034C: 20:04:10 [TUniServerModule]:HTTP Server Started on Port: 8077

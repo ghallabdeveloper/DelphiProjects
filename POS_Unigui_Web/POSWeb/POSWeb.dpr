@@ -20,7 +20,9 @@ uses
   Item_list in 'Sources\Items\Item_list.pas' {ItemsList: TUniForm},
   Pos_Invoice in 'Sources\Operation\Pos_Invoice.pas' {POSInvoice: TUniForm},
   Items_Search in 'Sources\Items\Items_Search.pas' {ItemsSearch: TUniForm},
-  Export_Rep in 'Sources\Fastreport\Export_Rep.pas' {ExportRep: TUniForm};
+  Export_Rep in 'Sources\Fastreport\Export_Rep.pas' {ExportRep: TUniForm},
+  Setting_Form in 'Sources\Common\Setting_Form.pas' {SettingForm: TUniForm},
+  Common_Classes in 'Sources\Common\Common_Classes.pas';
 
 {$R *.res}
 

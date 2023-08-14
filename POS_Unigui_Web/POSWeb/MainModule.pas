@@ -10,7 +10,18 @@ uses
   System.Variants,
   FireDAC.Phys.MSSQLDef, FireDAC.Phys.ODBCBase, FireDAC.Stan.Param,
   FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet, siComp;
+  const App_ver ='1.0.0';
+    Type
+    TAppSetting = record
+        FirmInfo_Name: string; // »Ì«‰«  «·„‰‘√… «· Ì  ŸÂ— ›Ì «· ﬁ«—Ì—
+    FirmInfo_Address: string;
+    FirmInfo_Phone, FirmInfo_Fax: string;
+    PhotosPath: string;
+    LogoPath: string;
+    FooterText: string; // ‰’  –ÌÌ· «·’›Õ…
 
+
+    end;
 type
   TUniMainModule = class(TUniGUIMainModule)
     DBConn: TFDConnection;
@@ -20,11 +31,14 @@ type
   private
     function GetRTLStr(RemoteAddress, BrowserType, BrowserVersion,
       OSType: string): string;
+    function CheckTableExist(tblename: string): boolean;
 
 
 
     { Private declarations }
   public
+
+  SetupData:  TAppSetting ;
     mUserName: string;
     pserverPath: string;
     mdbdatabaseName: string;
@@ -47,6 +61,7 @@ type
    procedure SaveRTL(const Value: Boolean);
        function GetNextId(tablename, FieldName, cri: string): variant;
            procedure setCurrencyFields(FieldName: string; var fquery: TFDQuery);
+           procedure UpgradeDB();
   end;
 
 function UniMainModule: TUniMainModule;
@@ -91,6 +106,7 @@ begin
     // DBConn.Connected := True;
     DBConn.LoginPrompt := false;
     DBConn.Open;
+     UpgradeDB;
   except
     on E: Exception do
     Begin
@@ -103,6 +119,7 @@ begin
   if DBConn.Connected then
   Begin
     Result := True;
+
     Exit;
   End;
 
@@ -157,6 +174,8 @@ begin
  SetRTLMain(RemoteAddress, '0', '0', '0');
 
 end;
+
+
 function TUniMainModule.GetRTLStr(RemoteAddress, BrowserType, BrowserVersion,
   OSType: string): string;
 
@@ -333,6 +352,51 @@ Begin
 
 
 End;
+function  TUniMainModule.CheckTableExist(tblename:string ):boolean;
+var
+  fquery: TFDQuery;
+begin
+  fquery:=OpenRecordSer('Select * from ' +tblename +' where 1=2',false );
+   if fquery= nil  then
+    Result := False
+    else
+    Result :=True;
+    FreeAndNil(fquery);
+
+
+
+end;
+procedure TUniMainModule.UpgradeDB;
+var
+ SQL :string;
+ App_verdb :string;
+begin
+    if not  CheckTableExist('Setting') then
+    begin
+    SQL:='Create table setting ('+
+    'setting_Id integer , ' +
+    'setting_name varchar(100) , ' +
+    'setting_value varchar(500) , ' +
+    'primary key (setting_Id)'+
+     ' );'                           ;
+      DBConn.ExecSQL(SQL)           ;
+      SQL :='insert into setting (setting_Id,setting_name,setting_value)'+
+      ' values (1,'''+'app_ver' +''' , '''+ App_ver +''' );';
+      DBConn.ExecSQL(SQL)           ;
+
+
+    end;
+
+ App_verdb := Dlookup('setting','setting_value','setting_Id=1');
+ if not  (App_verdb = App_ver) then
+ begin
+
+
+ end;
+
+
+
+end;
 {$ENDREGION}
 
 initialization
