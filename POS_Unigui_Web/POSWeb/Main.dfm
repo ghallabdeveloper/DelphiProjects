@@ -4,7 +4,6 @@ object MainForm: TMainForm
   ClientHeight = 455
   ClientWidth = 716
   Caption = 'POS Web'
-  OnShow = UniFormShow
   BorderStyle = bsNone
   WindowState = wsMaximized
   OldCreateOrder = False
@@ -7350,8 +7349,6 @@ object MainForm: TMainForm
       Color = clWindow
       TabOrder = 3
       OnClick = btnSettingClick
-      ExplicitLeft = -15
-      ExplicitTop = 183
     end
   end
   object siLang1: TsiLang

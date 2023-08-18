@@ -1,41 +1,55 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.dfm',0,1,1,1,1,0,0,,
-File_1=TSourceModule,'C:\Program Files (x86)\FastReport 6 VCL Enterprise\LIBD26\frxClass.pas',0,1,19875,1,19887,0,0,,
-File_2=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Rep\Tex_Rep_Visitor.pas',0,1,128,15,138,0,0,,
-File_3=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Reports\FrToolsData2.pas',0,1,69,1,69,0,0,,
-File_4=TSourceModule,'C:\MyWork\ERP\POSWeb\ServerModule.pas',0,1,7,18,1,0,0,,
-File_5=TSourceModule,'C:\Program Files (x86)\FastReport 6 VCL Enterprise\LIBD26\fs_iilparser.pas',0,1,1215,1,1227,0,0,,
-File_6=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Rep\Rep_Agrconcession.pas',0,1,1,1,1,0,0,,
-File_7=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Reports\UrlViewForm.pas',0,1,58,25,18,0,0,,
-File_8=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Reports\FrToolsData.pas',0,1,34,1,129,0,0,,
-File_9=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Reports\Rep1Form.pas',0,1,2,1,49,0,0,,
-File_10=TSourceModule,'C:\MyWork\ERP\POSWeb\Main.pas',0,1,98,13,103,0,0,,
-File_11=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Items\Items_Search.pas',0,1,87,3,99,0,0,,
-File_12=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\SOURCE\RTL\SYS\SysInit.pas',0,1,800,1,814,0,0,,
-File_13=TSourceModule,'C:\MyWork\Intime\IntimeWebDelphi\IntimeWeb(6.0.0)\Main.pas',0,1,627,38,635,0,0,,{1
+File_0=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCWrapper.pas',0,1,5823,1,5836,0,0,,
+File_1=TSourceModule,'c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.pas',0,1,7217,1,7230,0,0,,
+File_2=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Common\Common_Classes.pas',0,1,1,11,20,0,0,,
+File_3=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Fastreport\Export_Rep.pas',0,1,74,1,72,0,0,,
+File_4=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Items\Items_Search.pas',0,1,39,1,59,0,0,,
+File_5=TSourceModule,'C:\MyWork\Intime\IntimeWebDelphi\IntimeWeb(6.0.0)\Source\Setup\Setup_Options.pas',0,1,1,1,1,0,0,,
+File_6=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas',0,1,83,1,85,0,0,,
+File_7=TSourceModule,'C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.dfm',0,1,1,1,1,0,0,,
+File_8=TSourceModule,'C:\Program Files (x86)\FastReport 6 VCL Enterprise\LIBD26\frxClass.pas',0,1,19875,1,19887,0,0,,
+File_9=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Rep\Tex_Rep_Visitor.pas',0,1,128,15,138,0,0,,
+File_10=TSourceModule,'C:\MyWork\club\ClubWebUniGulFMs\ClubWeb(3.0.0)\Source\Reports\FrToolsData2.pas',0,1,69,1,69,0,0,,
+File_11=TSourceModule,'C:\MyWork\ERP\POSWeb\ServerModule.pas',0,1,7,18,1,0,0,,
+File_12=TSourceModule,'C:\Program Files (x86)\FastReport 6 VCL Enterprise\LIBD26\fs_iilparser.pas',0,1,1215,1,1227,0,0,,
 
 [Modules]
-Module0=C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas
-Module1=C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas
-Module2=C:\MyWork\ERP\POSWeb\Sources\Fastreport\Export_Rep.pas
-Count=3
+Module0=c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCBase.pas
+Module1=C:\MyWork\ERP\POSWeb\Sources\Common\Setting_Form.pas
+Module2=C:\MyWork\ERP\POSWeb\MainModule.pas
+Module3=C:\MyWork\ERP\POSWeb\Main.pas
+Module4=C:\MyWork\Intime\IntimeWebDelphi\IntimeWeb(6.0.0)\Source\Setup\General_Options.pas
+Module5=C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas
+Count=6
 EditWindowCount=1
 
-[C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas]
+[c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCBase.pas]
+ModuleType=TSourceModule
+
+[C:\MyWork\ERP\POSWeb\Sources\Common\Setting_Form.pas]
+ModuleType=TSourceModule
+
+[C:\MyWork\ERP\POSWeb\MainModule.pas]
+ModuleType=TSourceModule
+
+[C:\MyWork\ERP\POSWeb\Main.pas]
+ModuleType=TSourceModule
+
+[C:\MyWork\Intime\IntimeWebDelphi\IntimeWeb(6.0.0)\Source\Setup\General_Options.pas]
 ModuleType=TSourceModule
 
 [C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas]
 ModuleType=TSourceModule
 
-[C:\MyWork\ERP\POSWeb\Sources\Fastreport\Export_Rep.pas]
-ModuleType=TSourceModule
-
 [EditWindow0]
-ViewCount=3
-CurrentEditView=C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas
+ViewCount=6
+CurrentEditView=c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCBase.pas
 View0=0
 View1=1
 View2=2
+View3=3
+View4=4
+View5=5
 PercentageSizes=1
 Create=1
 Visible=1
@@ -78,25 +92,58 @@ EditViewName=C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas
 
 [View1]
 CustomEditViewType=TEditView
-Module=C:\MyWork\ERP\POSWeb\Sources\Security\Sec_Log.pas
-CursorX=5
-CursorY=95
-TopLine=91
+Module=C:\MyWork\ERP\POSWeb\Main.pas
+CursorX=32
+CursorY=107
+TopLine=104
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=Borland.FormDesignerView
+EditViewName=C:\MyWork\ERP\POSWeb\Main.pas
 
 [View2]
 CustomEditViewType=TEditView
-Module=C:\MyWork\ERP\POSWeb\Sources\Fastreport\Export_Rep.pas
-CursorX=1
-CursorY=72
-TopLine=74
+Module=C:\MyWork\ERP\POSWeb\MainModule.pas
+CursorX=7
+CursorY=393
+TopLine=364
+LeftCol=1
+Elisions=
+Bookmarks={1,174,1}{2,90,1}
+EditViewName=C:\MyWork\ERP\POSWeb\MainModule.pas
+
+[View3]
+CustomEditViewType=TEditView
+Module=c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCBase.pas
+CursorX=66
+CursorY=2817
+TopLine=2813
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\MyWork\ERP\POSWeb\Sources\Fastreport\Export_Rep.pas
+EditViewName=c:\program files (x86)\embarcadero\studio\20.0\source\data\firedac\FireDAC.Phys.ODBCBase.pas
+
+[View4]
+CustomEditViewType=TEditView
+Module=C:\MyWork\ERP\POSWeb\Sources\Common\Setting_Form.pas
+CursorX=1
+CursorY=96
+TopLine=86
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=C:\MyWork\ERP\POSWeb\Sources\Common\Setting_Form.pas
+
+[View5]
+CustomEditViewType=TEditView
+Module=C:\MyWork\Intime\IntimeWebDelphi\IntimeWeb(6.0.0)\Source\Setup\General_Options.pas
+CursorX=44
+CursorY=369
+TopLine=354
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=C:\MyWork\Intime\IntimeWebDelphi\IntimeWeb(6.0.0)\Source\Setup\General_Options.pas
 
 [UndockedDesigner]
 Count=0
@@ -126,12 +173,18 @@ Dockable=1
 StayOnTop=0
 
 [Breakpoints]
-Count=5
+Count=11
 Breakpoint0='C:\MyWork\ERP\POSWeb\Sources\Database\Database_connection.pas',57,'',0,1,'',1,0,0,'',1,'','','',0,''
 Breakpoint1='C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas',338,'',0,1,'',1,0,0,'',1,'','','',0,''
 Breakpoint2='C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas',319,'',0,1,'',1,0,0,'',1,'','','',0,''
-Breakpoint3='C:\MyWork\ERP\POSWeb\MainModule.pas',331,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint3='C:\MyWork\ERP\POSWeb\MainModule.pas',350,'',0,1,'',1,0,0,'',1,'','','',0,''
 Breakpoint4='C:\MyWork\ERP\POSWeb\Sources\Operation\Pos_Invoice.pas',494,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint5='C:\MyWork\ERP\POSWeb\MainModule.pas',374,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint6='C:\MyWork\ERP\POSWeb\MainModule.pas',122,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint7='C:\MyWork\ERP\POSWeb\MainModule.pas',109,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint8='C:\MyWork\ERP\POSWeb\MainModule.pas',90,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint9='C:\MyWork\ERP\POSWeb\MainModule.pas',376,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint10='C:\MyWork\ERP\POSWeb\MainModule.pas',261,'',0,1,'',1,0,0,'',1,'','','',0,''
 
 [EmbarcaderoWin32Debugger_AddressBreakpoints]
 Count=0
@@ -308,11 +361,6 @@ LRDockWidth=1988
 Dockable=1
 StayOnTop=0
 SplitPos=111
-
-[PropInspDesignerSelection]
-ArrangeBy=Name
-SelectedItem=ActiveControl,
-ExpandedItems=BorderIcons=0,ClientEvents=0,Constraints=0
 
 [frmDesignPreview]
 PercentageSizes=1

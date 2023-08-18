@@ -94,8 +94,9 @@ ModalResult := mrOk;
     SetupData.FirmInfo_Fax := Fax.Text;
     SetupData.FirmInfo_Name := FirmName.Text;
  SetupData.FooterText:=       FooterText.Text ;
+ saveSetupdta ();
   end;
-  //Save setupdata
+
 
 end;
 
@@ -132,19 +133,33 @@ begin
 end;
 
 procedure TSettingForm.UniFormCreate(Sender: TObject);
+var
+s :string;
 begin
  Self.RTL := UniMainModule.RTL;
 
   // ReadSetup Data
  with UniMainModule do
  Begin
+ ReadSetupdta;
   FirmName.Text := SetupData.FirmInfo_Name;
   Address.Text := SetupData.FirmInfo_Address;
   Phone.Text := SetupData.FirmInfo_Phone;
   Fax.Text := SetupData.FirmInfo_Fax;
+  try
    if SetupData.LogoPath <> '' then
-    Img.Picture.LoadFromFile(UniServerModule.StartPath + 'files\' +
-      SetupData.LogoPath);
+   Begin
+     s  :=UniServerModule.StartPath + 'files\' +
+      SetupData.LogoPath;
+    Img.Picture.LoadFromFile(s);
+   End;
+ except
+    on E: Exception do
+    Begin
+
+      Exit;
+    End;
+  end;
 
   FirmName.Text := SetupData.FirmInfo_Name;
   FooterText.Text := SetupData.FooterText;

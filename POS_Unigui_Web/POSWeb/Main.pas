@@ -27,7 +27,6 @@ type
     procedure UniFormCreate(Sender: TObject);
     procedure ThemeComboBoxChange(Sender: TObject);
     procedure btnLoginClick(Sender: TObject);
-    procedure UniFormShow(Sender: TObject);
     procedure btnMainMenuClick(Sender: TObject);
     procedure btnItemsListClick(Sender: TObject);
     procedure btnPOSInvoiceClick(Sender: TObject);
@@ -71,16 +70,6 @@ begin
 
     Self.RTL := UniMainModule.RTL;
 //     Self.Arabic := Self.RTL;
-end;
-
-procedure TMainForm.UniFormShow(Sender: TObject);
-begin
-  if not UniMainModule.CheckDBconnection() then
-    DataBaseConnectionGet.Show()
-  
-
-
-
 end;
 
 procedure TMainForm.btnMainMenuClick(Sender: TObject);
